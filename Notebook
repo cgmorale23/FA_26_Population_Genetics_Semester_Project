@@ -1,0 +1,3 @@
+# 1. Transfer FASTQs from my slate to our shared RT slate
+
+rsync -avh --progress /N/slate/cgmorale/elephant_fastqs/ /N/project/ZambianElephants/elephant_fastqs/
