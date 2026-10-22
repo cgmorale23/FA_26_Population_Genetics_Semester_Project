@@ -1,1 +1,28 @@
+#!/bin/bash
+#SBATCH --account=r02453
+#SBATCH --job-name=transfer_fastqs
+#SBATCH --partition=general
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=2G
+#SBATCH --time=12:00:00
+#SBATCH --output=transfer_fastqs_%j.log
+
+# Stop if a command fails
+set -e
+
+# Source and destination directories
+SOURCE=/N/slate/cgmorale/elephant_fastqs/
+DEST=/N/project/ZambianElephants/elephant_fastqs/
+
+# Create destination if needed
+mkdir -p "$DEST"
+
+# Transfer FASTQ files
+rsync -avh --partial --append-verify \
+  --info=progress2 \
+  "$SOURCE" "$DEST"
+
+echo "Transfer completed successfully!"
 
