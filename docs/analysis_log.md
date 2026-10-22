@@ -1,7 +1,7 @@
 
 # Zambia Elephant Genomics — Analysis Log
 
-## October 21, 2026 — FASTQ Transfer
+## Date: October 21, 2026 — FASTQ Transfer
 
 **Researcher:** Camille  
 **Task:** Transfer focal Zambian elephant FASTQs to shared Slate-Project storage.
@@ -38,3 +38,24 @@ sbatch transfer_fastqs.sbatch
 - Verify that all FASTQ files transferred correctly.
 - Confirm Xiaoyue can access the shared directory.
 - Begin FastQC analysis.
+
+## Date: 
+
+**Researcher:**   
+**Task:** 
+
+### Objective
+
+### Script
+
+### Commands executed
+```
+```
+### SLURM job information
+
+### Results
+
+### Methodological decisions
+
+### Next steps
+
