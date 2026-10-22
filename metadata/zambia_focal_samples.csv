@@ -1,0 +1,9 @@
+fastq_sample_id,sample_id,herd_or_group,management_status,sex,age_at_sampling_years,collection_date,tissue_type,storage_medium,sampling_note
+18032FL-181-02-06,Batoka,GRI,orphan,male,14,2022-10-23,skin tissue,DNA Shield,from ear
+18032FL-181-02-03,Nkala,GRI,orphan,male,10,2023-03-29,skin tissue,DNA Shield,from ear
+18032FL-181-02-07,Tuko,GRI,orphan,female,5,2023-03-29,skin tissue,DNA Shield,biopsy dart
+18032FL-181-02-02,Muso,GRI,orphan,male,12,2023-03-29,skin tissue,DNA Shield,from ear
+18032FL-181-02-05,Mphamvu,GRI,orphan,male,11,2023-08-03,skin tissue,DNA Shield,from ear
+18032FL-181-02-08,Tuskless AF,5736,wild,female,,2024-06-20,skin tissue,DNA Shield,biopsy dart
+18032FL-181-02-04,5735,5735,wild,female,35,2022-05-11,skin tissue,DNA Shield,ear cut
+18032FL-181-02-01,5736,5736,wild,female,9,2022-05-12,skin tissue,DNA Shield,ear cut
