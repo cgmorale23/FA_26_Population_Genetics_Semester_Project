@@ -1,0 +1,177 @@
+status	module	file
+PASS	Basic Statistics	Zambia01_R1.fastq.gz
+PASS	Per base sequence quality	Zambia01_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia01_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia01_R1.fastq.gz
+FAIL	Per base sequence content	Zambia01_R1.fastq.gz
+PASS	Per sequence GC content	Zambia01_R1.fastq.gz
+PASS	Per base N content	Zambia01_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia01_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia01_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia01_R1.fastq.gz
+PASS	Adapter Content	Zambia01_R1.fastq.gz
+PASS	Basic Statistics	Zambia01_R2.fastq.gz
+PASS	Per base sequence quality	Zambia01_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia01_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia01_R2.fastq.gz
+FAIL	Per base sequence content	Zambia01_R2.fastq.gz
+PASS	Per sequence GC content	Zambia01_R2.fastq.gz
+PASS	Per base N content	Zambia01_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia01_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia01_R2.fastq.gz
+PASS	Overrepresented sequences	Zambia01_R2.fastq.gz
+PASS	Adapter Content	Zambia01_R2.fastq.gz
+PASS	Basic Statistics	Zambia02_R1.fastq.gz
+PASS	Per base sequence quality	Zambia02_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia02_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia02_R1.fastq.gz
+FAIL	Per base sequence content	Zambia02_R1.fastq.gz
+PASS	Per sequence GC content	Zambia02_R1.fastq.gz
+PASS	Per base N content	Zambia02_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia02_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia02_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia02_R1.fastq.gz
+PASS	Adapter Content	Zambia02_R1.fastq.gz
+PASS	Basic Statistics	Zambia02_R2.fastq.gz
+PASS	Per base sequence quality	Zambia02_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia02_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia02_R2.fastq.gz
+FAIL	Per base sequence content	Zambia02_R2.fastq.gz
+PASS	Per sequence GC content	Zambia02_R2.fastq.gz
+PASS	Per base N content	Zambia02_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia02_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia02_R2.fastq.gz
+PASS	Overrepresented sequences	Zambia02_R2.fastq.gz
+PASS	Adapter Content	Zambia02_R2.fastq.gz
+PASS	Basic Statistics	Zambia03_R1.fastq.gz
+PASS	Per base sequence quality	Zambia03_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia03_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia03_R1.fastq.gz
+FAIL	Per base sequence content	Zambia03_R1.fastq.gz
+PASS	Per sequence GC content	Zambia03_R1.fastq.gz
+PASS	Per base N content	Zambia03_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia03_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia03_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia03_R1.fastq.gz
+PASS	Adapter Content	Zambia03_R1.fastq.gz
+PASS	Basic Statistics	Zambia03_R2.fastq.gz
+PASS	Per base sequence quality	Zambia03_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia03_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia03_R2.fastq.gz
+FAIL	Per base sequence content	Zambia03_R2.fastq.gz
+PASS	Per sequence GC content	Zambia03_R2.fastq.gz
+PASS	Per base N content	Zambia03_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia03_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia03_R2.fastq.gz
+WARN	Overrepresented sequences	Zambia03_R2.fastq.gz
+PASS	Adapter Content	Zambia03_R2.fastq.gz
+PASS	Basic Statistics	Zambia04_R1.fastq.gz
+PASS	Per base sequence quality	Zambia04_R1.fastq.gz
+FAIL	Per tile sequence quality	Zambia04_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia04_R1.fastq.gz
+FAIL	Per base sequence content	Zambia04_R1.fastq.gz
+PASS	Per sequence GC content	Zambia04_R1.fastq.gz
+PASS	Per base N content	Zambia04_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia04_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia04_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia04_R1.fastq.gz
+PASS	Adapter Content	Zambia04_R1.fastq.gz
+PASS	Basic Statistics	Zambia04_R2.fastq.gz
+PASS	Per base sequence quality	Zambia04_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia04_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia04_R2.fastq.gz
+FAIL	Per base sequence content	Zambia04_R2.fastq.gz
+PASS	Per sequence GC content	Zambia04_R2.fastq.gz
+PASS	Per base N content	Zambia04_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia04_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia04_R2.fastq.gz
+PASS	Overrepresented sequences	Zambia04_R2.fastq.gz
+PASS	Adapter Content	Zambia04_R2.fastq.gz
+PASS	Basic Statistics	Zambia05_R1.fastq.gz
+PASS	Per base sequence quality	Zambia05_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia05_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia05_R1.fastq.gz
+FAIL	Per base sequence content	Zambia05_R1.fastq.gz
+WARN	Per sequence GC content	Zambia05_R1.fastq.gz
+PASS	Per base N content	Zambia05_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia05_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia05_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia05_R1.fastq.gz
+PASS	Adapter Content	Zambia05_R1.fastq.gz
+PASS	Basic Statistics	Zambia05_R2.fastq.gz
+PASS	Per base sequence quality	Zambia05_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia05_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia05_R2.fastq.gz
+FAIL	Per base sequence content	Zambia05_R2.fastq.gz
+WARN	Per sequence GC content	Zambia05_R2.fastq.gz
+PASS	Per base N content	Zambia05_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia05_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia05_R2.fastq.gz
+WARN	Overrepresented sequences	Zambia05_R2.fastq.gz
+PASS	Adapter Content	Zambia05_R2.fastq.gz
+PASS	Basic Statistics	Zambia06_R1.fastq.gz
+PASS	Per base sequence quality	Zambia06_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia06_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia06_R1.fastq.gz
+FAIL	Per base sequence content	Zambia06_R1.fastq.gz
+WARN	Per sequence GC content	Zambia06_R1.fastq.gz
+PASS	Per base N content	Zambia06_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia06_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia06_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia06_R1.fastq.gz
+PASS	Adapter Content	Zambia06_R1.fastq.gz
+PASS	Basic Statistics	Zambia06_R2.fastq.gz
+PASS	Per base sequence quality	Zambia06_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia06_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia06_R2.fastq.gz
+FAIL	Per base sequence content	Zambia06_R2.fastq.gz
+PASS	Per sequence GC content	Zambia06_R2.fastq.gz
+PASS	Per base N content	Zambia06_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia06_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia06_R2.fastq.gz
+WARN	Overrepresented sequences	Zambia06_R2.fastq.gz
+PASS	Adapter Content	Zambia06_R2.fastq.gz
+PASS	Basic Statistics	Zambia07_R1.fastq.gz
+PASS	Per base sequence quality	Zambia07_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia07_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia07_R1.fastq.gz
+FAIL	Per base sequence content	Zambia07_R1.fastq.gz
+PASS	Per sequence GC content	Zambia07_R1.fastq.gz
+PASS	Per base N content	Zambia07_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia07_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia07_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia07_R1.fastq.gz
+PASS	Adapter Content	Zambia07_R1.fastq.gz
+PASS	Basic Statistics	Zambia07_R2.fastq.gz
+PASS	Per base sequence quality	Zambia07_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia07_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia07_R2.fastq.gz
+FAIL	Per base sequence content	Zambia07_R2.fastq.gz
+PASS	Per sequence GC content	Zambia07_R2.fastq.gz
+PASS	Per base N content	Zambia07_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia07_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia07_R2.fastq.gz
+PASS	Overrepresented sequences	Zambia07_R2.fastq.gz
+PASS	Adapter Content	Zambia07_R2.fastq.gz
+PASS	Basic Statistics	Zambia08_R1.fastq.gz
+PASS	Per base sequence quality	Zambia08_R1.fastq.gz
+WARN	Per tile sequence quality	Zambia08_R1.fastq.gz
+PASS	Per sequence quality scores	Zambia08_R1.fastq.gz
+FAIL	Per base sequence content	Zambia08_R1.fastq.gz
+PASS	Per sequence GC content	Zambia08_R1.fastq.gz
+PASS	Per base N content	Zambia08_R1.fastq.gz
+WARN	Sequence Length Distribution	Zambia08_R1.fastq.gz
+PASS	Sequence Duplication Levels	Zambia08_R1.fastq.gz
+PASS	Overrepresented sequences	Zambia08_R1.fastq.gz
+PASS	Adapter Content	Zambia08_R1.fastq.gz
+PASS	Basic Statistics	Zambia08_R2.fastq.gz
+PASS	Per base sequence quality	Zambia08_R2.fastq.gz
+FAIL	Per tile sequence quality	Zambia08_R2.fastq.gz
+PASS	Per sequence quality scores	Zambia08_R2.fastq.gz
+FAIL	Per base sequence content	Zambia08_R2.fastq.gz
+PASS	Per sequence GC content	Zambia08_R2.fastq.gz
+PASS	Per base N content	Zambia08_R2.fastq.gz
+WARN	Sequence Length Distribution	Zambia08_R2.fastq.gz
+PASS	Sequence Duplication Levels	Zambia08_R2.fastq.gz
+PASS	Overrepresented sequences	Zambia08_R2.fastq.gz
+PASS	Adapter Content	Zambia08_R2.fastq.gz

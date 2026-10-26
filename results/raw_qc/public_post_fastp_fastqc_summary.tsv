@@ -1,0 +1,925 @@
+status	module	file
+PASS	Basic Statistics	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Per tile sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+FAIL	Per base sequence content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Per base N content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Adapter Content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R1.fastq.gz
+PASS	Basic Statistics	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Per tile sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+FAIL	Per base sequence content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Per sequence GC content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Per base N content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Adapter Content	DS1506__DS1506_ATCCACTG-ACGCACCT_L003_R2.fastq.gz
+PASS	Basic Statistics	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+WARN	Per tile sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+FAIL	Per base sequence content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Per base N content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Adapter Content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R1.fastq.gz
+PASS	Basic Statistics	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+WARN	Per tile sequence quality	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+FAIL	Per base sequence content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Per sequence GC content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Per base N content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Adapter Content	DS1506__DS1506_ATCCACTG-ACGCACCT_L007_R2.fastq.gz
+PASS	Basic Statistics	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+WARN	Per tile sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Per base sequence content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Per base N content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Adapter Content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R1.fastq.gz
+PASS	Basic Statistics	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+WARN	Per tile sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Per base sequence content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+WARN	Per sequence GC content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Per base N content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Adapter Content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L001_R2.fastq.gz
+PASS	Basic Statistics	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per tile sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per base sequence content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Per base N content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Adapter Content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R1.fastq.gz
+PASS	Basic Statistics	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Per tile sequence quality	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Per base sequence content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+WARN	Per sequence GC content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Per base N content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Adapter Content	DS1506__LP2000016-NTP-B03-ebb63576-963d-4f7f-ba54-a29f12e7abb0_S4_L002_R2.fastq.gz
+PASS	Basic Statistics	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+WARN	Per tile sequence quality	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+WARN	Per base sequence content	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Per base N content	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Adapter Content	DS1506__LP6008643-DNA_A03_S5_L001_R1.fastq.gz
+PASS	Basic Statistics	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+WARN	Per tile sequence quality	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+WARN	Per base sequence content	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+WARN	Per sequence GC content	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Per base N content	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Adapter Content	DS1506__LP6008643-DNA_A03_S5_L001_R2.fastq.gz
+PASS	Basic Statistics	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Per base sequence quality	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Per tile sequence quality	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+WARN	Per base sequence content	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Per sequence GC content	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Per base N content	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Adapter Content	DS1506__LP6008643-DNA_A03_S5_L002_R1.fastq.gz
+PASS	Basic Statistics	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Per base sequence quality	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Per tile sequence quality	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Per sequence quality scores	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+WARN	Per base sequence content	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+WARN	Per sequence GC content	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Per base N content	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Overrepresented sequences	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Adapter Content	DS1506__LP6008643-DNA_A03_S5_L002_R2.fastq.gz
+PASS	Basic Statistics	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Per base sequence quality	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Per tile sequence quality	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Per sequence quality scores	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+FAIL	Per base sequence content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+WARN	Per sequence GC content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Per base N content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Overrepresented sequences	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Adapter Content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R1.fastq.gz
+PASS	Basic Statistics	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Per base sequence quality	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Per tile sequence quality	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Per sequence quality scores	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+FAIL	Per base sequence content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+WARN	Per sequence GC content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Per base N content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Overrepresented sequences	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Adapter Content	DS1507__DS1507_TGGTGGCA-TTACAGGA_L003_R2.fastq.gz
+PASS	Basic Statistics	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per base sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per base sequence content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per sequence GC content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Per base N content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Adapter Content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R1.fastq.gz
+PASS	Basic Statistics	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Per base sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Per base sequence content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+WARN	Per sequence GC content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Per base N content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Adapter Content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L001_R2.fastq.gz
+PASS	Basic Statistics	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per base sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per base sequence content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per sequence GC content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Per base N content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Adapter Content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R1.fastq.gz
+PASS	Basic Statistics	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Per base sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+WARN	Per tile sequence quality	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Per base sequence content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+WARN	Per sequence GC content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Per base N content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Adapter Content	DS1507__LP2000016-NTP-D05-86752a39-a182-4640-be84-ad1ed8218c31_S3_L002_R2.fastq.gz
+PASS	Basic Statistics	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Per base sequence quality	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+WARN	Per base sequence content	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Per sequence GC content	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Per base N content	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Adapter Content	DS1507__LP6008643-DNA_C05_S3_L001_R1.fastq.gz
+PASS	Basic Statistics	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Per base sequence quality	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+WARN	Per base sequence content	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+WARN	Per sequence GC content	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Per base N content	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Adapter Content	DS1507__LP6008643-DNA_C05_S3_L001_R2.fastq.gz
+PASS	Basic Statistics	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Per base sequence quality	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Per tile sequence quality	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+WARN	Per base sequence content	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Per sequence GC content	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Per base N content	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Adapter Content	DS1507__LP6008643-DNA_C05_S3_L002_R1.fastq.gz
+PASS	Basic Statistics	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Per base sequence quality	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+WARN	Per tile sequence quality	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Per sequence quality scores	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+WARN	Per base sequence content	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+WARN	Per sequence GC content	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Per base N content	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+WARN	Sequence Length Distribution	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Sequence Duplication Levels	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Overrepresented sequences	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Adapter Content	DS1507__LP6008643-DNA_C05_S3_L002_R2.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017882_R1.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017882_R1.fastq.gz
+WARN	Per tile sequence quality	KR0027__ERR14017882_R1.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017882_R1.fastq.gz
+PASS	Per base sequence content	KR0027__ERR14017882_R1.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017882_R1.fastq.gz
+PASS	Per base N content	KR0027__ERR14017882_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017882_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017882_R1.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017882_R1.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017882_R1.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017882_R2.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017882_R2.fastq.gz
+WARN	Per tile sequence quality	KR0027__ERR14017882_R2.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017882_R2.fastq.gz
+PASS	Per base sequence content	KR0027__ERR14017882_R2.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017882_R2.fastq.gz
+PASS	Per base N content	KR0027__ERR14017882_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017882_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017882_R2.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017882_R2.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017882_R2.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per tile sequence quality	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per base sequence content	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017883_R1.fastq.gz
+PASS	Per base N content	KR0027__ERR14017883_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017883_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017883_R1.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017883_R1.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017883_R1.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per tile sequence quality	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per base sequence content	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017883_R2.fastq.gz
+PASS	Per base N content	KR0027__ERR14017883_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017883_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017883_R2.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017883_R2.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017883_R2.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017884_R1.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017884_R1.fastq.gz
+WARN	Per tile sequence quality	KR0027__ERR14017884_R1.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017884_R1.fastq.gz
+WARN	Per base sequence content	KR0027__ERR14017884_R1.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017884_R1.fastq.gz
+PASS	Per base N content	KR0027__ERR14017884_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017884_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017884_R1.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017884_R1.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017884_R1.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017884_R2.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017884_R2.fastq.gz
+WARN	Per tile sequence quality	KR0027__ERR14017884_R2.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017884_R2.fastq.gz
+WARN	Per base sequence content	KR0027__ERR14017884_R2.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017884_R2.fastq.gz
+PASS	Per base N content	KR0027__ERR14017884_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017884_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017884_R2.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017884_R2.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017884_R2.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017885_R1.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017885_R1.fastq.gz
+PASS	Per tile sequence quality	KR0027__ERR14017885_R1.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017885_R1.fastq.gz
+WARN	Per base sequence content	KR0027__ERR14017885_R1.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017885_R1.fastq.gz
+PASS	Per base N content	KR0027__ERR14017885_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017885_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017885_R1.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017885_R1.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017885_R1.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017885_R2.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017885_R2.fastq.gz
+WARN	Per tile sequence quality	KR0027__ERR14017885_R2.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017885_R2.fastq.gz
+WARN	Per base sequence content	KR0027__ERR14017885_R2.fastq.gz
+PASS	Per sequence GC content	KR0027__ERR14017885_R2.fastq.gz
+PASS	Per base N content	KR0027__ERR14017885_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017885_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017885_R2.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017885_R2.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017885_R2.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017886_R1.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017886_R1.fastq.gz
+PASS	Per tile sequence quality	KR0027__ERR14017886_R1.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017886_R1.fastq.gz
+FAIL	Per base sequence content	KR0027__ERR14017886_R1.fastq.gz
+WARN	Per sequence GC content	KR0027__ERR14017886_R1.fastq.gz
+PASS	Per base N content	KR0027__ERR14017886_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017886_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017886_R1.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017886_R1.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017886_R1.fastq.gz
+PASS	Basic Statistics	KR0027__ERR14017886_R2.fastq.gz
+PASS	Per base sequence quality	KR0027__ERR14017886_R2.fastq.gz
+PASS	Per tile sequence quality	KR0027__ERR14017886_R2.fastq.gz
+PASS	Per sequence quality scores	KR0027__ERR14017886_R2.fastq.gz
+FAIL	Per base sequence content	KR0027__ERR14017886_R2.fastq.gz
+WARN	Per sequence GC content	KR0027__ERR14017886_R2.fastq.gz
+PASS	Per base N content	KR0027__ERR14017886_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0027__ERR14017886_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0027__ERR14017886_R2.fastq.gz
+PASS	Overrepresented sequences	KR0027__ERR14017886_R2.fastq.gz
+PASS	Adapter Content	KR0027__ERR14017886_R2.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per base sequence content	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017891_R1.fastq.gz
+PASS	Per base N content	KR0068__ERR14017891_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017891_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017891_R1.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017891_R1.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017891_R1.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017891_R2.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017891_R2.fastq.gz
+WARN	Per tile sequence quality	KR0068__ERR14017891_R2.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017891_R2.fastq.gz
+PASS	Per base sequence content	KR0068__ERR14017891_R2.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017891_R2.fastq.gz
+PASS	Per base N content	KR0068__ERR14017891_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017891_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017891_R2.fastq.gz
+WARN	Overrepresented sequences	KR0068__ERR14017891_R2.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017891_R2.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per base sequence content	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017892_R1.fastq.gz
+PASS	Per base N content	KR0068__ERR14017892_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017892_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017892_R1.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017892_R1.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017892_R1.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per base sequence content	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017892_R2.fastq.gz
+PASS	Per base N content	KR0068__ERR14017892_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017892_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017892_R2.fastq.gz
+WARN	Overrepresented sequences	KR0068__ERR14017892_R2.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017892_R2.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017893_R1.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017893_R1.fastq.gz
+WARN	Per tile sequence quality	KR0068__ERR14017893_R1.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017893_R1.fastq.gz
+WARN	Per base sequence content	KR0068__ERR14017893_R1.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017893_R1.fastq.gz
+PASS	Per base N content	KR0068__ERR14017893_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017893_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017893_R1.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017893_R1.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017893_R1.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017893_R2.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017893_R2.fastq.gz
+WARN	Per tile sequence quality	KR0068__ERR14017893_R2.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017893_R2.fastq.gz
+WARN	Per base sequence content	KR0068__ERR14017893_R2.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017893_R2.fastq.gz
+PASS	Per base N content	KR0068__ERR14017893_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017893_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017893_R2.fastq.gz
+WARN	Overrepresented sequences	KR0068__ERR14017893_R2.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017893_R2.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017894_R1.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017894_R1.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017894_R1.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017894_R1.fastq.gz
+WARN	Per base sequence content	KR0068__ERR14017894_R1.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017894_R1.fastq.gz
+PASS	Per base N content	KR0068__ERR14017894_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017894_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017894_R1.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017894_R1.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017894_R1.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017894_R2.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017894_R2.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017894_R2.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017894_R2.fastq.gz
+WARN	Per base sequence content	KR0068__ERR14017894_R2.fastq.gz
+PASS	Per sequence GC content	KR0068__ERR14017894_R2.fastq.gz
+PASS	Per base N content	KR0068__ERR14017894_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017894_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017894_R2.fastq.gz
+WARN	Overrepresented sequences	KR0068__ERR14017894_R2.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017894_R2.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017895_R1.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017895_R1.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017895_R1.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017895_R1.fastq.gz
+FAIL	Per base sequence content	KR0068__ERR14017895_R1.fastq.gz
+WARN	Per sequence GC content	KR0068__ERR14017895_R1.fastq.gz
+PASS	Per base N content	KR0068__ERR14017895_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017895_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017895_R1.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017895_R1.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017895_R1.fastq.gz
+PASS	Basic Statistics	KR0068__ERR14017895_R2.fastq.gz
+PASS	Per base sequence quality	KR0068__ERR14017895_R2.fastq.gz
+PASS	Per tile sequence quality	KR0068__ERR14017895_R2.fastq.gz
+PASS	Per sequence quality scores	KR0068__ERR14017895_R2.fastq.gz
+FAIL	Per base sequence content	KR0068__ERR14017895_R2.fastq.gz
+WARN	Per sequence GC content	KR0068__ERR14017895_R2.fastq.gz
+PASS	Per base N content	KR0068__ERR14017895_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0068__ERR14017895_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0068__ERR14017895_R2.fastq.gz
+PASS	Overrepresented sequences	KR0068__ERR14017895_R2.fastq.gz
+PASS	Adapter Content	KR0068__ERR14017895_R2.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per base sequence content	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017896_R1.fastq.gz
+PASS	Per base N content	KR0116__ERR14017896_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017896_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017896_R1.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017896_R1.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017896_R1.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017896_R2.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017896_R2.fastq.gz
+FAIL	Per tile sequence quality	KR0116__ERR14017896_R2.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017896_R2.fastq.gz
+PASS	Per base sequence content	KR0116__ERR14017896_R2.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017896_R2.fastq.gz
+PASS	Per base N content	KR0116__ERR14017896_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017896_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017896_R2.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017896_R2.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017896_R2.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017898_R1.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017898_R1.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017898_R1.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017898_R1.fastq.gz
+WARN	Per base sequence content	KR0116__ERR14017898_R1.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017898_R1.fastq.gz
+PASS	Per base N content	KR0116__ERR14017898_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017898_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017898_R1.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017898_R1.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017898_R1.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017898_R2.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017898_R2.fastq.gz
+FAIL	Per tile sequence quality	KR0116__ERR14017898_R2.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017898_R2.fastq.gz
+WARN	Per base sequence content	KR0116__ERR14017898_R2.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017898_R2.fastq.gz
+PASS	Per base N content	KR0116__ERR14017898_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017898_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017898_R2.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017898_R2.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017898_R2.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017899_R1.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017899_R1.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017899_R1.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017899_R1.fastq.gz
+WARN	Per base sequence content	KR0116__ERR14017899_R1.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017899_R1.fastq.gz
+PASS	Per base N content	KR0116__ERR14017899_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017899_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017899_R1.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017899_R1.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017899_R1.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017899_R2.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017899_R2.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017899_R2.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017899_R2.fastq.gz
+WARN	Per base sequence content	KR0116__ERR14017899_R2.fastq.gz
+PASS	Per sequence GC content	KR0116__ERR14017899_R2.fastq.gz
+PASS	Per base N content	KR0116__ERR14017899_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017899_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017899_R2.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017899_R2.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017899_R2.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017900_R1.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017900_R1.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017900_R1.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017900_R1.fastq.gz
+FAIL	Per base sequence content	KR0116__ERR14017900_R1.fastq.gz
+WARN	Per sequence GC content	KR0116__ERR14017900_R1.fastq.gz
+PASS	Per base N content	KR0116__ERR14017900_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017900_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017900_R1.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017900_R1.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017900_R1.fastq.gz
+PASS	Basic Statistics	KR0116__ERR14017900_R2.fastq.gz
+PASS	Per base sequence quality	KR0116__ERR14017900_R2.fastq.gz
+PASS	Per tile sequence quality	KR0116__ERR14017900_R2.fastq.gz
+PASS	Per sequence quality scores	KR0116__ERR14017900_R2.fastq.gz
+FAIL	Per base sequence content	KR0116__ERR14017900_R2.fastq.gz
+WARN	Per sequence GC content	KR0116__ERR14017900_R2.fastq.gz
+PASS	Per base N content	KR0116__ERR14017900_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0116__ERR14017900_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__ERR14017900_R2.fastq.gz
+PASS	Overrepresented sequences	KR0116__ERR14017900_R2.fastq.gz
+PASS	Adapter Content	KR0116__ERR14017900_R2.fastq.gz
+PASS	Basic Statistics	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per base sequence quality	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per tile sequence quality	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per sequence quality scores	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per base sequence content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per sequence GC content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Per base N content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Overrepresented sequences	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Adapter Content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R1.fastq.gz
+PASS	Basic Statistics	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per base sequence quality	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per tile sequence quality	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per sequence quality scores	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per base sequence content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per sequence GC content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Per base N content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Overrepresented sequences	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Adapter Content	KR0116__LP2000016-NTP-E01-99a3eb9b-effd-499d-abb1-6e887abcfa81_S1_L002_R2.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017901_R1.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017901_R1.fastq.gz
+WARN	Per tile sequence quality	KR0138__ERR14017901_R1.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017901_R1.fastq.gz
+PASS	Per base sequence content	KR0138__ERR14017901_R1.fastq.gz
+WARN	Per sequence GC content	KR0138__ERR14017901_R1.fastq.gz
+PASS	Per base N content	KR0138__ERR14017901_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017901_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017901_R1.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017901_R1.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017901_R1.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017901_R2.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017901_R2.fastq.gz
+WARN	Per tile sequence quality	KR0138__ERR14017901_R2.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017901_R2.fastq.gz
+PASS	Per base sequence content	KR0138__ERR14017901_R2.fastq.gz
+PASS	Per sequence GC content	KR0138__ERR14017901_R2.fastq.gz
+PASS	Per base N content	KR0138__ERR14017901_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017901_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017901_R2.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017901_R2.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017901_R2.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017902_R1.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017902_R1.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017902_R1.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017902_R1.fastq.gz
+PASS	Per base sequence content	KR0138__ERR14017902_R1.fastq.gz
+WARN	Per sequence GC content	KR0138__ERR14017902_R1.fastq.gz
+PASS	Per base N content	KR0138__ERR14017902_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017902_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017902_R1.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017902_R1.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017902_R1.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per base sequence content	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per sequence GC content	KR0138__ERR14017902_R2.fastq.gz
+PASS	Per base N content	KR0138__ERR14017902_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017902_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017902_R2.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017902_R2.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017902_R2.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017903_R1.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017903_R1.fastq.gz
+WARN	Per tile sequence quality	KR0138__ERR14017903_R1.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017903_R1.fastq.gz
+WARN	Per base sequence content	KR0138__ERR14017903_R1.fastq.gz
+WARN	Per sequence GC content	KR0138__ERR14017903_R1.fastq.gz
+PASS	Per base N content	KR0138__ERR14017903_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017903_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017903_R1.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017903_R1.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017903_R1.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017903_R2.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017903_R2.fastq.gz
+WARN	Per tile sequence quality	KR0138__ERR14017903_R2.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017903_R2.fastq.gz
+WARN	Per base sequence content	KR0138__ERR14017903_R2.fastq.gz
+PASS	Per sequence GC content	KR0138__ERR14017903_R2.fastq.gz
+PASS	Per base N content	KR0138__ERR14017903_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017903_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017903_R2.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017903_R2.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017903_R2.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017904_R1.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017904_R1.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017904_R1.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017904_R1.fastq.gz
+WARN	Per base sequence content	KR0138__ERR14017904_R1.fastq.gz
+WARN	Per sequence GC content	KR0138__ERR14017904_R1.fastq.gz
+PASS	Per base N content	KR0138__ERR14017904_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017904_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017904_R1.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017904_R1.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017904_R1.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017904_R2.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017904_R2.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017904_R2.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017904_R2.fastq.gz
+WARN	Per base sequence content	KR0138__ERR14017904_R2.fastq.gz
+PASS	Per sequence GC content	KR0138__ERR14017904_R2.fastq.gz
+PASS	Per base N content	KR0138__ERR14017904_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017904_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017904_R2.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017904_R2.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017904_R2.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017905_R1.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017905_R1.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017905_R1.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017905_R1.fastq.gz
+FAIL	Per base sequence content	KR0138__ERR14017905_R1.fastq.gz
+WARN	Per sequence GC content	KR0138__ERR14017905_R1.fastq.gz
+PASS	Per base N content	KR0138__ERR14017905_R1.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017905_R1.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017905_R1.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017905_R1.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017905_R1.fastq.gz
+PASS	Basic Statistics	KR0138__ERR14017905_R2.fastq.gz
+PASS	Per base sequence quality	KR0138__ERR14017905_R2.fastq.gz
+PASS	Per tile sequence quality	KR0138__ERR14017905_R2.fastq.gz
+PASS	Per sequence quality scores	KR0138__ERR14017905_R2.fastq.gz
+FAIL	Per base sequence content	KR0138__ERR14017905_R2.fastq.gz
+PASS	Per sequence GC content	KR0138__ERR14017905_R2.fastq.gz
+PASS	Per base N content	KR0138__ERR14017905_R2.fastq.gz
+WARN	Sequence Length Distribution	KR0138__ERR14017905_R2.fastq.gz
+PASS	Sequence Duplication Levels	KR0138__ERR14017905_R2.fastq.gz
+PASS	Overrepresented sequences	KR0138__ERR14017905_R2.fastq.gz
+PASS	Adapter Content	KR0138__ERR14017905_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017915_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017915_R1.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017915_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017915_R1.fastq.gz
+PASS	Per base sequence content	LO3503__ERR14017915_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017915_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017915_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017915_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017915_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017915_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017915_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017915_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017915_R2.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017915_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017915_R2.fastq.gz
+PASS	Per base sequence content	LO3503__ERR14017915_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017915_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017915_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017915_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017915_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017915_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017915_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017916_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017916_R1.fastq.gz
+WARN	Per tile sequence quality	LO3503__ERR14017916_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017916_R1.fastq.gz
+PASS	Per base sequence content	LO3503__ERR14017916_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017916_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017916_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017916_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017916_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017916_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017916_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017916_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017916_R2.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017916_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017916_R2.fastq.gz
+PASS	Per base sequence content	LO3503__ERR14017916_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017916_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017916_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017916_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017916_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017916_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017916_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017917_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017917_R1.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017917_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017917_R1.fastq.gz
+WARN	Per base sequence content	LO3503__ERR14017917_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017917_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017917_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017917_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017917_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017917_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017917_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017917_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017917_R2.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017917_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017917_R2.fastq.gz
+WARN	Per base sequence content	LO3503__ERR14017917_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017917_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017917_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017917_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017917_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017917_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017917_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017918_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017918_R1.fastq.gz
+WARN	Per tile sequence quality	LO3503__ERR14017918_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017918_R1.fastq.gz
+WARN	Per base sequence content	LO3503__ERR14017918_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017918_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017918_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017918_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017918_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017918_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017918_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017918_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017918_R2.fastq.gz
+FAIL	Per tile sequence quality	LO3503__ERR14017918_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017918_R2.fastq.gz
+WARN	Per base sequence content	LO3503__ERR14017918_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017918_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017918_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017918_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017918_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017918_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017918_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017919_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017919_R1.fastq.gz
+PASS	Per tile sequence quality	LO3503__ERR14017919_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017919_R1.fastq.gz
+FAIL	Per base sequence content	LO3503__ERR14017919_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017919_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017919_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017919_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017919_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017919_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017919_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017919_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017919_R2.fastq.gz
+PASS	Per tile sequence quality	LO3503__ERR14017919_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017919_R2.fastq.gz
+FAIL	Per base sequence content	LO3503__ERR14017919_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017919_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017919_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017919_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017919_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017919_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017919_R2.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017920_R1.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017920_R1.fastq.gz
+PASS	Per tile sequence quality	LO3503__ERR14017920_R1.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017920_R1.fastq.gz
+FAIL	Per base sequence content	LO3503__ERR14017920_R1.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017920_R1.fastq.gz
+PASS	Per base N content	LO3503__ERR14017920_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017920_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017920_R1.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017920_R1.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017920_R1.fastq.gz
+PASS	Basic Statistics	LO3503__ERR14017920_R2.fastq.gz
+PASS	Per base sequence quality	LO3503__ERR14017920_R2.fastq.gz
+WARN	Per tile sequence quality	LO3503__ERR14017920_R2.fastq.gz
+PASS	Per sequence quality scores	LO3503__ERR14017920_R2.fastq.gz
+FAIL	Per base sequence content	LO3503__ERR14017920_R2.fastq.gz
+PASS	Per sequence GC content	LO3503__ERR14017920_R2.fastq.gz
+PASS	Per base N content	LO3503__ERR14017920_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3503__ERR14017920_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3503__ERR14017920_R2.fastq.gz
+PASS	Overrepresented sequences	LO3503__ERR14017920_R2.fastq.gz
+PASS	Adapter Content	LO3503__ERR14017920_R2.fastq.gz
+PASS	Basic Statistics	LO3505__ERR14017921_R1.fastq.gz
+PASS	Per base sequence quality	LO3505__ERR14017921_R1.fastq.gz
+PASS	Per tile sequence quality	LO3505__ERR14017921_R1.fastq.gz
+PASS	Per sequence quality scores	LO3505__ERR14017921_R1.fastq.gz
+FAIL	Per base sequence content	LO3505__ERR14017921_R1.fastq.gz
+PASS	Per sequence GC content	LO3505__ERR14017921_R1.fastq.gz
+PASS	Per base N content	LO3505__ERR14017921_R1.fastq.gz
+WARN	Sequence Length Distribution	LO3505__ERR14017921_R1.fastq.gz
+PASS	Sequence Duplication Levels	LO3505__ERR14017921_R1.fastq.gz
+PASS	Overrepresented sequences	LO3505__ERR14017921_R1.fastq.gz
+PASS	Adapter Content	LO3505__ERR14017921_R1.fastq.gz
+PASS	Basic Statistics	LO3505__ERR14017921_R2.fastq.gz
+PASS	Per base sequence quality	LO3505__ERR14017921_R2.fastq.gz
+PASS	Per tile sequence quality	LO3505__ERR14017921_R2.fastq.gz
+PASS	Per sequence quality scores	LO3505__ERR14017921_R2.fastq.gz
+FAIL	Per base sequence content	LO3505__ERR14017921_R2.fastq.gz
+PASS	Per sequence GC content	LO3505__ERR14017921_R2.fastq.gz
+PASS	Per base N content	LO3505__ERR14017921_R2.fastq.gz
+WARN	Sequence Length Distribution	LO3505__ERR14017921_R2.fastq.gz
+PASS	Sequence Duplication Levels	LO3505__ERR14017921_R2.fastq.gz
+PASS	Overrepresented sequences	LO3505__ERR14017921_R2.fastq.gz
+PASS	Adapter Content	LO3505__ERR14017921_R2.fastq.gz
+PASS	Basic Statistics	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per base sequence quality	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per tile sequence quality	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per sequence quality scores	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per base sequence content	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per sequence GC content	QE0870__ERR14018116_R1.fastq.gz
+PASS	Per base N content	QE0870__ERR14018116_R1.fastq.gz
+WARN	Sequence Length Distribution	QE0870__ERR14018116_R1.fastq.gz
+PASS	Sequence Duplication Levels	QE0870__ERR14018116_R1.fastq.gz
+PASS	Overrepresented sequences	QE0870__ERR14018116_R1.fastq.gz
+PASS	Adapter Content	QE0870__ERR14018116_R1.fastq.gz
+PASS	Basic Statistics	QE0870__ERR14018116_R2.fastq.gz
+PASS	Per base sequence quality	QE0870__ERR14018116_R2.fastq.gz
+PASS	Per tile sequence quality	QE0870__ERR14018116_R2.fastq.gz
+PASS	Per sequence quality scores	QE0870__ERR14018116_R2.fastq.gz
+PASS	Per base sequence content	QE0870__ERR14018116_R2.fastq.gz
+WARN	Per sequence GC content	QE0870__ERR14018116_R2.fastq.gz
+PASS	Per base N content	QE0870__ERR14018116_R2.fastq.gz
+WARN	Sequence Length Distribution	QE0870__ERR14018116_R2.fastq.gz
+PASS	Sequence Duplication Levels	QE0870__ERR14018116_R2.fastq.gz
+WARN	Overrepresented sequences	QE0870__ERR14018116_R2.fastq.gz
+PASS	Adapter Content	QE0870__ERR14018116_R2.fastq.gz
+PASS	Basic Statistics	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per base sequence quality	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per tile sequence quality	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per sequence quality scores	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per base sequence content	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per sequence GC content	QE0870__ERR14018117_R1.fastq.gz
+PASS	Per base N content	QE0870__ERR14018117_R1.fastq.gz
+WARN	Sequence Length Distribution	QE0870__ERR14018117_R1.fastq.gz
+PASS	Sequence Duplication Levels	QE0870__ERR14018117_R1.fastq.gz
+PASS	Overrepresented sequences	QE0870__ERR14018117_R1.fastq.gz
+PASS	Adapter Content	QE0870__ERR14018117_R1.fastq.gz
+PASS	Basic Statistics	QE0870__ERR14018117_R2.fastq.gz
+PASS	Per base sequence quality	QE0870__ERR14018117_R2.fastq.gz
+PASS	Per tile sequence quality	QE0870__ERR14018117_R2.fastq.gz
+PASS	Per sequence quality scores	QE0870__ERR14018117_R2.fastq.gz
+PASS	Per base sequence content	QE0870__ERR14018117_R2.fastq.gz
+WARN	Per sequence GC content	QE0870__ERR14018117_R2.fastq.gz
+PASS	Per base N content	QE0870__ERR14018117_R2.fastq.gz
+WARN	Sequence Length Distribution	QE0870__ERR14018117_R2.fastq.gz
+PASS	Sequence Duplication Levels	QE0870__ERR14018117_R2.fastq.gz
+WARN	Overrepresented sequences	QE0870__ERR14018117_R2.fastq.gz
+PASS	Adapter Content	QE0870__ERR14018117_R2.fastq.gz
+PASS	Basic Statistics	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per base sequence quality	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per tile sequence quality	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per sequence quality scores	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per base sequence content	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per sequence GC content	QE2798__ERR14018138_R1.fastq.gz
+PASS	Per base N content	QE2798__ERR14018138_R1.fastq.gz
+WARN	Sequence Length Distribution	QE2798__ERR14018138_R1.fastq.gz
+PASS	Sequence Duplication Levels	QE2798__ERR14018138_R1.fastq.gz
+PASS	Overrepresented sequences	QE2798__ERR14018138_R1.fastq.gz
+PASS	Adapter Content	QE2798__ERR14018138_R1.fastq.gz
+PASS	Basic Statistics	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per base sequence quality	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per tile sequence quality	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per sequence quality scores	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per base sequence content	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per sequence GC content	QE2798__ERR14018138_R2.fastq.gz
+PASS	Per base N content	QE2798__ERR14018138_R2.fastq.gz
+WARN	Sequence Length Distribution	QE2798__ERR14018138_R2.fastq.gz
+PASS	Sequence Duplication Levels	QE2798__ERR14018138_R2.fastq.gz
+WARN	Overrepresented sequences	QE2798__ERR14018138_R2.fastq.gz
+PASS	Adapter Content	QE2798__ERR14018138_R2.fastq.gz
+PASS	Basic Statistics	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per base sequence quality	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per tile sequence quality	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per sequence quality scores	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per base sequence content	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per sequence GC content	QE2798__ERR14018139_R1.fastq.gz
+PASS	Per base N content	QE2798__ERR14018139_R1.fastq.gz
+WARN	Sequence Length Distribution	QE2798__ERR14018139_R1.fastq.gz
+PASS	Sequence Duplication Levels	QE2798__ERR14018139_R1.fastq.gz
+PASS	Overrepresented sequences	QE2798__ERR14018139_R1.fastq.gz
+PASS	Adapter Content	QE2798__ERR14018139_R1.fastq.gz
+PASS	Basic Statistics	QE2798__ERR14018139_R2.fastq.gz
+PASS	Per base sequence quality	QE2798__ERR14018139_R2.fastq.gz
+PASS	Per tile sequence quality	QE2798__ERR14018139_R2.fastq.gz
+PASS	Per sequence quality scores	QE2798__ERR14018139_R2.fastq.gz
+PASS	Per base sequence content	QE2798__ERR14018139_R2.fastq.gz
+WARN	Per sequence GC content	QE2798__ERR14018139_R2.fastq.gz
+PASS	Per base N content	QE2798__ERR14018139_R2.fastq.gz
+WARN	Sequence Length Distribution	QE2798__ERR14018139_R2.fastq.gz
+PASS	Sequence Duplication Levels	QE2798__ERR14018139_R2.fastq.gz
+WARN	Overrepresented sequences	QE2798__ERR14018139_R2.fastq.gz
+PASS	Adapter Content	QE2798__ERR14018139_R2.fastq.gz
