@@ -1,0 +1,89 @@
+status	module	file
+PASS	Basic Statistics	NA5205_R1.fastq.gz
+PASS	Per base sequence quality	NA5205_R1.fastq.gz
+PASS	Per tile sequence quality	NA5205_R1.fastq.gz
+PASS	Per sequence quality scores	NA5205_R1.fastq.gz
+FAIL	Per base sequence content	NA5205_R1.fastq.gz
+WARN	Per sequence GC content	NA5205_R1.fastq.gz
+PASS	Per base N content	NA5205_R1.fastq.gz
+WARN	Sequence Length Distribution	NA5205_R1.fastq.gz
+PASS	Sequence Duplication Levels	NA5205_R1.fastq.gz
+PASS	Overrepresented sequences	NA5205_R1.fastq.gz
+PASS	Adapter Content	NA5205_R1.fastq.gz
+PASS	Basic Statistics	NA5205_R2.fastq.gz
+PASS	Per base sequence quality	NA5205_R2.fastq.gz
+PASS	Per tile sequence quality	NA5205_R2.fastq.gz
+PASS	Per sequence quality scores	NA5205_R2.fastq.gz
+FAIL	Per base sequence content	NA5205_R2.fastq.gz
+WARN	Per sequence GC content	NA5205_R2.fastq.gz
+PASS	Per base N content	NA5205_R2.fastq.gz
+WARN	Sequence Length Distribution	NA5205_R2.fastq.gz
+PASS	Sequence Duplication Levels	NA5205_R2.fastq.gz
+PASS	Overrepresented sequences	NA5205_R2.fastq.gz
+PASS	Adapter Content	NA5205_R2.fastq.gz
+PASS	Basic Statistics	NA5206_R1.fastq.gz
+PASS	Per base sequence quality	NA5206_R1.fastq.gz
+PASS	Per tile sequence quality	NA5206_R1.fastq.gz
+PASS	Per sequence quality scores	NA5206_R1.fastq.gz
+FAIL	Per base sequence content	NA5206_R1.fastq.gz
+PASS	Per sequence GC content	NA5206_R1.fastq.gz
+PASS	Per base N content	NA5206_R1.fastq.gz
+WARN	Sequence Length Distribution	NA5206_R1.fastq.gz
+PASS	Sequence Duplication Levels	NA5206_R1.fastq.gz
+PASS	Overrepresented sequences	NA5206_R1.fastq.gz
+PASS	Adapter Content	NA5206_R1.fastq.gz
+PASS	Basic Statistics	NA5206_R2.fastq.gz
+PASS	Per base sequence quality	NA5206_R2.fastq.gz
+PASS	Per tile sequence quality	NA5206_R2.fastq.gz
+PASS	Per sequence quality scores	NA5206_R2.fastq.gz
+FAIL	Per base sequence content	NA5206_R2.fastq.gz
+PASS	Per sequence GC content	NA5206_R2.fastq.gz
+PASS	Per base N content	NA5206_R2.fastq.gz
+WARN	Sequence Length Distribution	NA5206_R2.fastq.gz
+PASS	Sequence Duplication Levels	NA5206_R2.fastq.gz
+PASS	Overrepresented sequences	NA5206_R2.fastq.gz
+PASS	Adapter Content	NA5206_R2.fastq.gz
+PASS	Basic Statistics	NA5207_R1.fastq.gz
+PASS	Per base sequence quality	NA5207_R1.fastq.gz
+PASS	Per tile sequence quality	NA5207_R1.fastq.gz
+PASS	Per sequence quality scores	NA5207_R1.fastq.gz
+FAIL	Per base sequence content	NA5207_R1.fastq.gz
+PASS	Per sequence GC content	NA5207_R1.fastq.gz
+PASS	Per base N content	NA5207_R1.fastq.gz
+WARN	Sequence Length Distribution	NA5207_R1.fastq.gz
+PASS	Sequence Duplication Levels	NA5207_R1.fastq.gz
+PASS	Overrepresented sequences	NA5207_R1.fastq.gz
+PASS	Adapter Content	NA5207_R1.fastq.gz
+PASS	Basic Statistics	NA5207_R2.fastq.gz
+PASS	Per base sequence quality	NA5207_R2.fastq.gz
+PASS	Per tile sequence quality	NA5207_R2.fastq.gz
+PASS	Per sequence quality scores	NA5207_R2.fastq.gz
+FAIL	Per base sequence content	NA5207_R2.fastq.gz
+WARN	Per sequence GC content	NA5207_R2.fastq.gz
+PASS	Per base N content	NA5207_R2.fastq.gz
+WARN	Sequence Length Distribution	NA5207_R2.fastq.gz
+PASS	Sequence Duplication Levels	NA5207_R2.fastq.gz
+PASS	Overrepresented sequences	NA5207_R2.fastq.gz
+PASS	Adapter Content	NA5207_R2.fastq.gz
+PASS	Basic Statistics	NA5208_R1.fastq.gz
+PASS	Per base sequence quality	NA5208_R1.fastq.gz
+PASS	Per tile sequence quality	NA5208_R1.fastq.gz
+PASS	Per sequence quality scores	NA5208_R1.fastq.gz
+FAIL	Per base sequence content	NA5208_R1.fastq.gz
+PASS	Per sequence GC content	NA5208_R1.fastq.gz
+PASS	Per base N content	NA5208_R1.fastq.gz
+WARN	Sequence Length Distribution	NA5208_R1.fastq.gz
+PASS	Sequence Duplication Levels	NA5208_R1.fastq.gz
+PASS	Overrepresented sequences	NA5208_R1.fastq.gz
+PASS	Adapter Content	NA5208_R1.fastq.gz
+PASS	Basic Statistics	NA5208_R2.fastq.gz
+PASS	Per base sequence quality	NA5208_R2.fastq.gz
+PASS	Per tile sequence quality	NA5208_R2.fastq.gz
+PASS	Per sequence quality scores	NA5208_R2.fastq.gz
+FAIL	Per base sequence content	NA5208_R2.fastq.gz
+PASS	Per sequence GC content	NA5208_R2.fastq.gz
+PASS	Per base N content	NA5208_R2.fastq.gz
+WARN	Sequence Length Distribution	NA5208_R2.fastq.gz
+PASS	Sequence Duplication Levels	NA5208_R2.fastq.gz
+PASS	Overrepresented sequences	NA5208_R2.fastq.gz
+PASS	Adapter Content	NA5208_R2.fastq.gz
