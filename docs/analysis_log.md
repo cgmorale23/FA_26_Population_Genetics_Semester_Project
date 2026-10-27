@@ -132,3 +132,48 @@ For ROH sensitivity analysis, selected public elephants may be analyzed both at 
 - Determine depth-matching targets only after the observed focal coverage distribution is known.
 - For selected public individuals, compare ROH estimates at original depth and at downsampled depth to quantify coverage-dependent ROH bias.
 - Compare newly generated ROH estimates with published African-elephant ROH summaries while explicitly accounting for methodological differences.
+
+## Date: 10/27/2026
+
+**Researcher:**   Xiaoyue
+**Task:**  qc and multiqc for 4 Namibian elephant samples(4 runs), 
+          test: processing fastp on all Namibian Elephant samples and re-check qualification
+
+### Objective
+    for evaluating raw-read quality and (technical heterogeneity) 
+    -- including :
+    read length, sequencing yield, GC content, duplication, adapter content, and other FastQC metrics.
+    
+    for testing whether standardized common read preprocessing should be applied before alignment.
+
+### Script
+- 'namibia_raw_fastqc.sbatch'
+- 'namibia_raw_multiqc.sbatch'
+- 'namibia_fastp.sbatch'
+- 'namibia_post_fastp_fastqc.sbatch'
+
+
+### Results
+| FastQC metric | Raw | Post-fastp | Change | Interpretation |
+|---|---:|---:|---|---|
+| Per-base sequence content | **8 FAIL** | **8 FAIL** | No change | Systematic sequence-composition pattern; not caused by adapter/poly-G |
+| Per-sequence GC content | **3 WARN** | **3 WARN** | No change | Mild GC-distribution signal persists |
+| Overrepresented sequences | **4 WARN** | **0** | **Resolved** | R2-specific technical sequences were successfully removed |
+| Adapter Content | 0 | 0 | No issue detected | No FastQC-level adapter warning in either condition |
+| Per-tile sequence quality | 0 | 0 | No issue detected | No evident tile-quality problem |
+| Sequence Length Distribution | **8 WARN** | **8 WARN** | No change in status | Already variable in archived raw FASTQs; therefore not solely introduced by fastp |
+
+
+| Metric | Namibia |
+|---|---:|
+| Individuals | 4 |
+| PE units | 4 |
+| FASTQs | 8 |
+| Reads retained | **99.903–99.932%** |
+| Median reads retained | **99.918%** |
+| Bases retained | **99.692–99.735%** |
+| Median bases retained | **99.701%** |
+| Adapter-trimmed reads / pair | 262,752–1,158,816 |
+| Raw R2 poly-G | **4/4 WARN, 0.107–0.157%** |
+| Post-fastp overrepresented sequences | **0 WARN / 0 FAIL** |
+
