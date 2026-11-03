@@ -177,3 +177,67 @@ For ROH sensitivity analysis, selected public elephants may be analyzed both at 
 | Raw R2 poly-G | **4/4 WARN, 0.107–0.157%** |
 | Post-fastp overrepresented sequences | **0 WARN / 0 FAIL** |
 
+
+ 
+## Date: 11/2/2026
+
+**Researcher:**   Xiaoyue
+**Task:**  Sensitivity analysis on QC on three branches
+
+### Objective
+While reviewing our initial QC pipeline against the workflow used by Pečnerová et al.(STAMPEDE workflow), It is noticed that our initial preprocessing used fastp rather than AdapterRemoval, and it included poly-G trimming but did not merge overlapping paired-end reads. In contrast, the published PALEOMIX workflow used AdapterRemoval with overlapping-read collapsing and did not explicitly include poly-G trimming.
+
+To evaluate whether these differences affect downstream results, we set up three parallel preprocessing sensitivity experiments:
+
+Current fastp (merge OFF): Adapter and poly-G trimming, retaining reads as paired-end.
+
+fastp (merge ON): The same adapter and poly-G trimming, with overlapping read pairs merged into single reads. Unmerged pairs are retained.
+
+AdapterRemoval (Pečnerová-style): Adapter trimming and overlapping-read collapsing using the settings specified in their published PALEOMIX configuration, without an additional poly-G trimming step.
+
+The goal is to assess whether the preprocessing choices influence mapping statistics, effective coverage, variant calling, and ultimately ROH inference. This will help us determine which approach is most appropriate while evaluating sensitivity to the published methodology.
+
+### Script
+fastp_merge_on.sbatch
+fastp_merge_on_fastqc.sbatch
+adapterremoval_pecnerova.sbatch
+adapterremoval_post_fastqc.sbatch
+
+
+### Results
+QC and Sensitivity Comparison Tables
+qc/fastp_merge/fastp_merge_summary.tsv
+qc/adapterremoval_pecnerova/adapterremoval_summary.tsv
+qc/preprocessing_merge_comparison.tsv
+
+Metric	Current fastp	Fastp merge ON	AdapterRemoval
+Sequencing units	54	54	54
+Adapter trimming	Yes	Yes	Yes
+Poly-G trimming	Yes	Yes	No explicit trimming
+Overlapping-read merging	OFF	ON	ON (collapse)
+Public samples: mean merge/collapse rate	—	13.91%	18.93%
+Namibia: mean merge/collapse rate	—	43.36%	53.37%
+Zambia: mean merge/collapse rate	—	23.21%	28.55%
+R2 files with FastQC poly-G overrepresentation signals	Not yet consolidated	17/54	40/54
+
+
+Note: AdapterRemoval consistently produced higher read-collapsing rates than fastp. This is consistent with differences in their overlap-detection criteria: AdapterRemoval permits shorter overlaps (11 bp by default) and uses a more permissive mismatch threshold (--mm 3), whereas fastp requires at least 30 bp of overlap and applies stricter mismatch limits by default. Therefore, the higher collapse rate should not be interpreted as evidence of superior preprocessing quality without examining downstream mapping and genotype-level metrics.
+
+## Date: 11/2/2026
+
+**Researcher:**   Xiaoyue
+**Task:**  BWA-MEM alignment and PALEOMIX cleanup across three preprocessing branches
+
+### Script
+mapping_align_cleanup.sbatch
+qc/mapping/master_mapping_manifest.tsv
+qc/mapping/current_fastp_mapping.tsv
+qc/mapping/fastp_merge_mapping.tsv
+qc/mapping/adapterremoval_mapping.tsv
+
+### Results
+TBC
+
+
+### Next step
+post-alignment processing, mapping quality assessment and preprocessing sensitivity evaluation
