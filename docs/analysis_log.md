@@ -299,8 +299,6 @@ Compare alignment performance among preprocessing strategies and identify potent
 
 ### Results
 
-SLURM Job ID: `12692124`
-
 All three representative tasks completed successfully with exit code `0:0`.
 
 | Metric | current_fastp paired | fastp_merge merged | adapterremoval collapsed |
