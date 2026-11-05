@@ -236,8 +236,29 @@ qc/mapping/fastp_merge_mapping.tsv
 qc/mapping/adapterremoval_mapping.tsv
 
 ### Results
-TBC
+Complete and validate BWA-MEM alignment and PLAEOMIX cleanup across three preprocessing sensitivity branches (11/05)
 
 
 ### Next step
 post-alignment processing, mapping quality assessment and preprocessing sensitivity evaluation
+
+
+
+
+
+ 
+## Date: 11/5/2026
+
+**Researcher:**   Xiaoyue
+**Task:**  
+
+### Objective
+
+
+### Script
+
+
+
+### Results
+
+
