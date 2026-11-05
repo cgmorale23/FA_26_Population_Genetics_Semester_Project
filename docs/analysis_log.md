@@ -238,6 +238,35 @@ qc/mapping/adapterremoval_mapping.tsv
 ### Results
 Complete and validate BWA-MEM alignment and PLAEOMIX cleanup across three preprocessing sensitivity branches (11/05)
 
+Successfully extracted all 270 expected mapping records from 305 SLURM output logs.
+
+- `current_fastp`: 54/54 BAMs
+- `fastp_merge`: 108/108 BAMs
+- `adapterremoval`: 108/108 BAMs
+
+All BAMs passed `samtools quickcheck` and had corresponding index files.
+
+Branch	Read type	Units	Primary mapped	Properly paired
+Current fastp	Paired	54	98.7151%	94.7862%
+Fastp merge ON	Paired	54	98.6253%	94.4504%
+Fastp merge ON	Merged	54	98.4097%	N/A
+AdapterRemoval	Paired	54	98.6756%	94.4728%
+AdapterRemoval	Collapsed	54	98.4892%	N/A
+
+
+Initial post-alignment QC has been completed for all 270 BAMs across the three preprocessing branches. Primary mapping rates were consistently high (98.41–98.72%), and properly paired rates ranged from 94.45% to 94.79% for paired-end alignments. 
+
+These preliminary results suggest broadly comparable overall alignment performance among the preprocessing strategies. 
+
+However, read-type-specific mapping rates are not directly equivalent because merging/collapsing changes the composition of the remaining paired-read subsets. Further sample-level MAPQ, mismatch, and coverage analyses are needed to evaluate alignment quality and potential reference-mapping bias.
+
+**2. Singleton-rate analysis**
+Run-to-run variation in singleton rates was observed across multiple public elephant samples.
+
+Under `current_fastp`, the largest within-sample ranges were observed in DS1507 (0.574 percentage points) and DS1506 (0.516 percentage points).
+
+Comparing `fastp_merge` and `adapterremoval`, AdapterRemoval showed a smaller within-sample singleton-rate range in 7 of the 9 samples with multiple sequencing units. However, the remaining paired-read populations differ between preprocessing branches, so this does not establish superior alignment quality.
+
 
 ### Next step
 post-alignment processing, mapping quality assessment and preprocessing sensitivity evaluation
@@ -245,20 +274,66 @@ post-alignment processing, mapping quality assessment and preprocessing sensitiv
 
 
 
-
  
 ## Date: 11/5/2026
 
-**Researcher:**   Xiaoyue
-**Task:**  
+**Researcher:** Xiaoyue  
+**Task:** BWA-MEM Post-alignment Mapping QC
 
 ### Objective
 
+Evaluate the alignment quality of 22 elephant samples across three preprocessing branches (`current_fastp`, `fastp_merge`, and `adapterremoval`) after BWA-MEM alignment and PALEOMIX cleanup.
+
+Assess primary mapping rates, properly paired reads, singleton rates, mapping quality (MAPQ), edit distance (NM), soft clipping, and preliminary coverage against the LoxAfr4 reference genome.
+
+Compare alignment performance among preprocessing strategies and identify potential sequencing-run variation or reference-mapping bias before PCR duplicate processing.
 
 ### Script
 
+`extract_mapping_flagstats.py`
+`unit_mapping_flagstat.tsv`, 
+`mapping_qc_pilot.py`
+`mapping_qc_worker.py` 
+`mapping_qc_pilot.sbatch`
 
 
 ### Results
 
+SLURM Job ID: `12692124`
 
+All three representative tasks completed successfully with exit code `0:0`.
+
+| Metric | current_fastp paired | fastp_merge merged | adapterremoval collapsed |
+|---|---:|---:|---:|
+| Sample | DS1506 | DS1506 | DS1506 |
+| Sampled reads | 12,085 | 1,547 | 2,095 |
+| MAPQ ≥30 (%) | 97.53 | 97.03 | 96.85 |
+| NM / 100 bp | 0.954 | 0.871 | 1.311 |
+| Soft-clipped reads (%) | 4.38 | 3.68 | 6.11 |
+| Preliminary regional depth | 5.32× | 1.04× | 1.44× |
+| Runtime | 8 s | 3 s | 5 s |
+
+All three representative BAMs showed a high proportion of MAPQ ≥30 alignments.
+
+The AdapterRemoval collapsed test exhibited higher NM and soft-clipping values than the other two test records. Further analysis across all samples and read types is required to determine whether this pattern is consistent.
+
+Regional depth values represent individual read-type BAMs and are not directly comparable as total branch-level coverage.
+
+**4. Output files**
+
+Directory: `qc/mapping/post_alignment/`
+
+- `unit_mapping_flagstat.tsv`
+- `branch_readtype_summary.tsv`
+- `sample_readtype_summary.tsv`
+- `analysis_group_readtype_summary.tsv`
+- `singleton_by_unit.tsv`
+- `singleton_within_sample_summary.tsv`
+- `mapping_qc_pilot_manifest.tsv`
+- `mapping_qc_pilot_windows.bed`
+
+Full mapping QC summary files will be generated after completing all 270 regional QC tasks.
+
+### Next Step
+
+Complete the full regional mapping QC analysis, compare MAPQ, NM, soft clipping, and coverage across the three preprocessing branches, and investigate potential reference-mapping bias before proceeding to library-level PCR duplicate processing.
