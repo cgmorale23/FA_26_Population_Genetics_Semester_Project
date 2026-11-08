@@ -1,0 +1,15 @@
+branch	length_band	mapped_reads	softclip_reads_pct	softclip_ge20_pct	softclip_ge100_pct	softclipped_bp_pct	MAPQ_ge30_pct	aligned_lt50pct_pct
+fastp_merge	250-269	4411573	6.757	4.024	1.961	1.691	86.459	1.287
+fastp_merge	270-272	0	NA	NA	NA	NA	NA	NA
+fastp_merge	273-279	0	NA	NA	NA	NA	NA	NA
+fastp_merge	280-285	0	NA	NA	NA	NA	NA	NA
+fastp_merge	286-291	0	NA	NA	NA	NA	NA	NA
+fastp_merge	292-299	0	NA	NA	NA	NA	NA	NA
+fastp_merge	250-299 TOTAL	4411573	6.757	4.024	1.961	1.691	86.459	1.287
+adapterremoval	250-269	4741190	7.585	4.869	2.971	2.212	86.318	1.776
+adapterremoval	270-272	700971	7.568	4.972	3.313	2.276	86.701	1.749
+adapterremoval	273-279	1660057	8.258	5.738	4.194	2.651	86.898	1.824
+adapterremoval	280-285	1591986	13.557	11.276	9.961	5.363	87.146	2.656
+adapterremoval	286-291	1016042	22.445	20.488	19.418	9.908	87.324	4.118
+adapterremoval	292-299	0	NA	NA	NA	NA	NA	NA
+adapterremoval	250-299 TOTAL	9710246	10.233	7.710	6.072	3.692	86.686	2.172

@@ -1,0 +1,6 @@
+branch	read_type	bam_records	total_primary_reads	primary_mapped_reads	primary_mapping_rate_pct
+adapterremoval	collapsed	54	1710467789	1684626722	98.48924
+adapterremoval	paired	54	21975438948	21684385657	98.67555
+current_fastp	paired	54	25367085922	25041152584	98.71513
+fastp_merge	merged	54	1191223113	1172279653	98.40975
+fastp_merge	paired	54	22984639690	22668679867	98.62534

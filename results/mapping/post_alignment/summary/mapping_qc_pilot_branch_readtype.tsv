@@ -1,0 +1,6 @@
+branch	read_type	unit_records	sampled_reads	pct_mapq0	pct_mapq_ge20	pct_mapq_ge30	pct_mapq_ge40	pct_softclipped_reads	pct_softclipped_bases	pct_missing_NM	NM_per_100_aligned_query_bp
+adapterremoval	collapsed	54	145223	1.72906	97.13544	96.58250	96.14937	13.46274	6.79887	0.00000	1.03139
+adapterremoval	paired	54	2078595	1.41403	97.66948	97.40613	97.23198	5.48712	1.46044	0.00000	0.86435
+current_fastp	paired	54	2364844	1.41054	97.67202	97.40774	97.23402	5.25045	1.36461	0.00000	0.82933
+fastp_merge	merged	54	104557	1.76746	97.11641	96.57507	96.12556	3.74150	0.88412	0.00000	0.44239
+fastp_merge	paired	54	2157082	1.40834	97.67250	97.40928	97.23594	5.39859	1.38028	0.00000	0.86183
