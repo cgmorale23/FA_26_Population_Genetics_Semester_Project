@@ -337,10 +337,13 @@ A targeted diagnostic was available for one public unit, KR0116 / ERR14017898, w
 
 ### Output Files
 
-- `qc/mapping/post_alignment/full_bam_qc/single/full_bam_qc_all.tsv`
-- `qc/mapping/post_alignment/full_bam_qc/single/full_bam_qc_by_readtype.tsv`
-- `qc/mapping/post_alignment/full_bam_qc/single/full_bam_qc_length_bins.tsv`
-- `qc/mapping/post_alignment/length_diagnostic/`
+Post-alignment mapping results are stored under `results/mapping/post_alignment/`.
+
+- `summary/`: mapping-rate, flagstat, singleton, pilot, and other summary TSVs.
+- `full_bam_qc/paired/` and `full_bam_qc/single/`: full-BAM summary tables.
+- `length_diagnostic/`: length diagnostic TSVs.
+- `readpair_diagnostic/KR0116__ERR14017898/summary.tsv`: one-unit stratified diagnostic.
+- `pilot/mapping_qc_pilot_windows.bed`: windows used for the 64-window pilot.
 
 ### Next steps
 
