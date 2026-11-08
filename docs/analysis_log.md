@@ -273,21 +273,9 @@ Comparing `fastp_merge` and `adapterremoval`, AdapterRemoval showed a smaller wi
 post-alignment processing, mapping quality assessment and preprocessing sensitivity evaluation
 
 
+## Date: 11/05/2026 — 64-window pilot mapping QC
 
-
- 
-## Date: 11/5/2026
-
-**Researcher:** Xiaoyue  
-**Task:** BWA-MEM Post-alignment Mapping QC
-
-### Objective
-
-Evaluate the alignment quality of 22 elephant samples across three preprocessing branches (`current_fastp`, `fastp_merge`, and `adapterremoval`) after BWA-MEM alignment and PALEOMIX cleanup.
-
-Assess primary mapping rates, properly paired reads, singleton rates, mapping quality (MAPQ), edit distance (NM), soft clipping, and preliminary coverage against the LoxAfr4 reference genome.
-
-Compare alignment performance among preprocessing strategies and identify potential sequencing-run variation or reference-mapping bias before PCR duplicate processing.
+**Task:** Pilot mapping QC and soft-clipping assessment using reads sampled from 64 genomic windows.
 
 ### Script
 
@@ -297,56 +285,21 @@ Compare alignment performance among preprocessing strategies and identify potent
 `mapping_qc_worker.py` 
 `mapping_qc_pilot.sbatch`
 
-
 ### Results
 
-All three representative tasks completed successfully with exit code `0:0`.
+| Branch | Read type | Sampled reads | MAPQ ≥20 | MAPQ ≥30 | Soft-clipped reads | Soft-clipped bases |
+|---|---|---:|---:|---:|---:|---:|
+| AdapterRemoval | Paired | 2,078,595 | 97.67% | 97.41% | 5.49% | 1.46% |
+| Current fastp | Paired | 2,364,844 | 97.67% | 97.41% | 5.25% | 1.36% |
+| fastp merge ON | Paired | 2,157,082 | 97.67% | 97.41% | 5.40% | 1.38% |
+| AdapterRemoval | Collapsed | 145,223 | 97.14% | 96.58% | 13.46% | 6.80% |
+| fastp merge ON | Merged | 104,557 | 97.12% | 96.58% | 3.74% | 0.88% |
 
-| Metric | current_fastp paired | fastp_merge merged | adapterremoval collapsed |
-|---|---:|---:|---:|
-| Sample | DS1506 | DS1506 | DS1506 |
-| Sampled reads | 12,085 | 1,547 | 2,095 |
-| MAPQ ≥30 (%) | 97.53 | 97.03 | 96.85 |
-| NM / 100 bp | 0.954 | 0.871 | 1.311 |
-| Soft-clipped reads (%) | 4.38 | 3.68 | 6.11 |
-| Preliminary regional depth | 5.32× | 1.04× | 1.44× |
-| Runtime | 8 s | 3 s | 5 s |
+**Interpretation:** This was a window-based sample, not a whole-BAM assessment. These values are preliminary and should not be used as the final mapping QC results.
 
-All three representative BAMs showed a high proportion of MAPQ ≥30 alignments.
+## Date: 11/06/2026 onward — Full-BAM mapping QC and soft-clipping screening
 
-The AdapterRemoval collapsed test exhibited higher NM and soft-clipping values than the other two test records. Further analysis across all samples and read types is required to determine whether this pattern is consistent.
-
-Regional depth values represent individual read-type BAMs and are not directly comparable as total branch-level coverage.
-
-**4. Output files**
-
-Directory: `qc/mapping/post_alignment/`
-
-- `unit_mapping_flagstat.tsv`
-- `branch_readtype_summary.tsv`
-- `sample_readtype_summary.tsv`
-- `analysis_group_readtype_summary.tsv`
-- `singleton_by_unit.tsv`
-- `singleton_within_sample_summary.tsv`
-- `mapping_qc_pilot_manifest.tsv`
-- `mapping_qc_pilot_windows.bed`
-
-Full mapping QC summary files will be generated after completing all 270 regional QC tasks.
-
-### Next Step
-
-Complete the full regional mapping QC analysis, compare MAPQ, NM, soft clipping, and coverage across the three preprocessing branches, and investigate potential reference-mapping bias before proceeding to library-level PCR duplicate processing.
-
-
-
- ## Date: 11/6/2026
-
-**Researcher:** Xiaoyue  
-**Task:** BWA-MEM Post-alignment Mapping QC — Full-BAM Analysis
-
-### Objective
-
-Evaluate genome-wide alignment quality across three preprocessing branches (`current_fastp`, `fastp_merge`, and `adapterremoval`), focusing on MAPQ, NM edit distance, and soft clipping. Investigate the elevated soft clipping observed in AdapterRemoval collapsed reads during the previous 64-window pilot QC.
+**Task:** Assess mapping quality and clipping across the complete BAMs for all 54 sequencing units in each preprocessing branch.
 
 ### Script
 
@@ -355,23 +308,32 @@ Evaluate genome-wide alignment quality across three preprocessing branches (`cur
 - `mapping_qc_full.sbatch`
 - `mapping_qc_length_diagnostic.sbatch`
 
-### Results
+### Results: paired BAMs
 
-Full-BAM QC was completed for **108/108 single-end BAMs** (54 fastp merged and 54 AdapterRemoval collapsed). Unlike the previous 320-kb regional QC, this analysis scanned primary mapped alignments across the entire BAM.
+| Branch | Units | MAPQ ≥20 | MAPQ ≥30 | MAPQ ≥40 | Soft-clipped reads | Soft-clipped bases |
+|---|---:|---:|---:|---:|---:|---:|
+| AdapterRemoval | 54 | 92.60% | 90.97% | 90.29% | 6.82% | 2.01% |
+| Current fastp | 54 | 92.09% | 90.36% | 89.63% | 6.96% | 2.01% |
+| fastp merge ON | 54 | 92.44% | 90.72% | 89.99% | 6.96% | 2.00% |
 
-| Metric | Fastp merged | AdapterRemoval collapsed |
-|---|---:|---:|
-| Primary mapped reads | 1.172 billion | 1.685 billion |
-| MAPQ ≥30 (%) | 83.11 | 80.93 |
-| NM / 100 aligned bp | 0.774 | **1.583 ⚠️** |
-| Soft-clipped reads (%) | 6.79 | **19.47 ⚠️** |
-| Soft-clipped bases (%) | 1.55 | **8.65 ⚠️** |
-| Reads with ≥20 bp clipping (%) | 3.77 | **16.38 ⚠️** |
-| Mean read length (bp) | 198.97 | 223.15 |
+Across paired BAMs, the three branches had similar MAPQ distributions and soft-clipped-base percentages. The full-BAM results differ from the 64-window pilot: the pilot reported higher MAPQ ≥20 percentages (about 97.7%) and lower paired-read soft-clipping (about 5.3–5.5%). The full-BAM screening is the appropriate basis for final conclusions; the difference also indicates that the window sample did not represent the full-BAM distribution.
 
-AdapterRemoval collapsed reads exhibited substantially higher soft clipping and NM values. Read-length-stratified analysis revealed particularly pronounced differences among long collapsed reads (250–299 bp).
+Soft-clipped reads varied among cohorts. In paired BAMs, public samples had approximately 6.98–7.40% soft-clipped reads, Namibia 5.20–5.54%, and focal Zambia 3.81–5.57% across branches.
 
-In KR0116, **83.05%** of AdapterRemoval collapsed reads measuring 286–291 bp showed soft clipping, compared with **22.45%** in a lower-clipping DS1506 sequencing unit. These findings are consistent with a possible contribution from short-overlap collapsing and sequencing-library differences, but incorrect collapsing has not yet been confirmed.
+### Results: collapsed and merged single-end BAMs
+
+| Branch / read type | Units | MAPQ ≥20 | MAPQ ≥30 | Soft-clipped reads | Soft-clipped bases |
+|---|---:|---:|---:|---:|---:|
+| AdapterRemoval collapsed | 54 | 83.03% | 80.93% | 19.47% | 8.65% |
+| fastp merge ON merged | 54 | 84.95% | 83.11% | 6.79% | 1.55% |
+
+These read types show larger differences than the paired BAMs. Their results should be interpreted separately because AdapterRemoval collapsed reads and fastp merged reads are different preprocessing products. AdapterRemoval collapsed-read clipping was especially high in the public cohort (26.65% of reads; 12.04% of bases), compared with Namibia (5.84%; 1.69%) and focal Zambia (7.84%; 3.22%).
+
+### Read-pair diagnostic
+
+A targeted diagnostic was available for one public unit, KR0116 / ERR14017898, with 50 sampled reads per stratum. In the 250–269 bp low-clipping stratum, 94% of sampled reads were merged by fastp; in the matching high-clipping stratum, 8% were merged, while 56% mapped as proper pairs, 26% mapped to different references, and 10% had one or both reads unmapped. This is a one-unit, stratified diagnostic and should not be generalized to the full cohort.
+
+`missing_flagstat_logs.tsv` contains only its header, indicating no missing flagstat entries in this summary.
 
 ### Output Files
 
@@ -380,8 +342,9 @@ In KR0116, **83.05%** of AdapterRemoval collapsed reads measuring 286–291 bp s
 - `qc/mapping/post_alignment/full_bam_qc/single/full_bam_qc_length_bins.tsv`
 - `qc/mapping/post_alignment/length_diagnostic/`
 
-### Next Steps
+### Next steps
 
-- Complete full-BAM QC for the remaining 162 paired-end BAMs.
-- Investigate high-clipping AdapterRemoval reads across representative sequencing units using read-level comparisons.
-- Compare complete preprocessing branches before library-level duplicate processing and sample-level coverage analysis.
+- Use the full-BAM screening as the final basis for mapping QC; retain the 64-window results as a clearly labeled pilot.
+- Review overall mapping-rate and depth/breadth summaries separately; those measures are not included in the attached tables.
+- Expand the read-pair/clipping diagnostic beyond KR0116 before making cohort-wide claims about read-level outcomes.
+- **Library-group note:** The Pečnerová replication track will follow their cleanup approach for comparability. Their handling may combine independently prepared libraries when marking duplicates. Keep the library-aware track separate and mark duplicates within verified physical libraries; resolve the Uganda sample library assignments before treating those groups as confirmed.
