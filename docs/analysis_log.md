@@ -351,3 +351,37 @@ Post-alignment mapping results are stored under `results/mapping/post_alignment/
 - Review overall mapping-rate and depth/breadth summaries separately; those measures are not included in the attached tables.
 - Expand the read-pair/clipping diagnostic beyond KR0116 before making cohort-wide claims about read-level outcomes.
 - **Library-group note:** The Pečnerová replication track will follow their cleanup approach for comparability. Their handling may combine independently prepared libraries when marking duplicates. Keep the library-aware track separate and mark duplicates within verified physical libraries; resolve the Uganda sample library assignments before treating those groups as confirmed.
+
+
+### Date: 11/09/2026 — Full-genome depth and breadth baseline
+
+**Task**: Summarize full-genome depth and breadth for BAMs across all preprocessing branches, grouped by sample and read type.
+
+**Method**
+- Processed 110 sample × branch × read-type groups from the current unit BAMs.
+- Used MAPQ ≥20 and included reads carrying the duplicate flag.
+- Calculated coverage across the 3,271,792,967 bp reference.
+- Breadth is the percentage of reference bases covered by at least one read; mean depth is the average aligned-read coverage across the reference.
+- These are pre-duplicate-cleanup baseline results. They do not represent the depth available to genotype or ROH analyses after cleanup.
+
+### Results
+Paired-read breadth was generally high, but mean depth varied substantially among samples. In the AdapterRemoval paired group, focal Zambia samples had 93.85–94.56% breadth and 8.42–12.08× mean depth. Public samples had 92.81–94.95% breadth, but depth ranged from 6.18× to 154.74×.
+
+KR0138 had the highest observed AdapterRemoval paired mean depth at 154.74×, combining five BAMs. This is the average across the reference, not the depth at every position. Its breadth was 94.95%, so about 5% of reference bases had no reads at the ≥1× threshold.
+
+Lower mean depth did not always mean narrow genomic coverage. For example, QE0870 had 10.00× mean depth and 94.29% breadth; LO3505 had 6.18× and 92.81%. Breadth at ≥1× does not establish that sites meet genotype-calling depth or quality thresholds.
+
+The output contains 110 sample-level rows and 15 cohort summary rows.
+Output files generated under:
+
+qc/mapping/post_alignment/full_genome_depth_breadth/run_20261108_203808/
+- full_genome_depth_breadth_by_sample.tsv
+- full_genome_depth_breadth_by_cohort.tsv
+- tasks/: 110 per-group task outputs
+  
+### Interpretation and next steps
+- Treat these tables as the pre-cleanup coverage baseline rather than the post-cleanup effective depth.
+- Duplicate cleanup is currently running and has not finished. When it completes, check the Slurm state, logs, and expected output BAMs before interpreting its results.
+- Recalculate depth and breadth on the cleanup outputs using the same reference and MAPQ threshold. Compare pre- and post-cleanup results by sample, branch, and read type.
+- For genotype and ROH decisions, also inspect genotype depth/quality and callable-site summaries; mean depth and 1× breadth alone are not sufficient.
+- Keep library-aware cleanup results separate from the Pečnerová replication track until library assignments and cleanup groupings are documented.
