@@ -385,3 +385,70 @@ qc/mapping/post_alignment/full_genome_depth_breadth/run_20261108_203808/
 - Recalculate depth and breadth on the cleanup outputs using the same reference and MAPQ threshold. Compare pre- and post-cleanup results by sample, branch, and read type.
 - For genotype and ROH decisions, also inspect genotype depth/quality and callable-site summaries; mean depth and 1× breadth alone are not sufficient.
 - Keep library-aware cleanup results separate from the Pečnerová replication track until library assignments and cleanup groupings are documented.
+
+
+## Date: 11/10/2026 - Onward
+
+**Task** 
+Duplicate marking, removal and Zambian autosomal coverage
+
+Complete and validate duplicate-marked BAMs for the eight focal Zambian elephants, then summarize post-cleanup coverage across the 27 complete autosomes.
+
+**Note** Why we used two duplicate-marking tracks
+The public samples have multiple sequencing runs as they mentioned with old sequencing batches and newly sequenced batches, along with newly constructed libraries, but the available metadata do not reliably establish which runs came from the same physical library. We therefore kept two analyses separate:
+- Pečnerová-replication track: pool a sample’s sequencing units within each preprocessing branch and read type as one Library1 group before duplicate marking. E.g. Group1: AdapterRemoval - paired BAM of Zambia01（ This track basically serves replication, it is an explicit grouping assumption, not confirmation that all runs were prepared from one physical library.
+- Library-aware track: mark duplicates separately within verified physical-library groups. Samples whose library assignments are unresolved are withheld from this track until the metadata are verified(but in our case there is little chance to complete...)
+For Zambian samples it is going to generate only one set of data because they weren't separated into different lanes during sequencing, so we don't need to consider the issue of "a unified library".
+
+Alignment and duplicate-marking workflow
+Reads were aligned to LoxAfr4 with BWA-MEM. Within each sample, branch, read type, and selected grouping track, input BAMs were combined before duplicate marking. Paired reads were name-sorted, processed with samtools fixmate -m, coordinate-sorted, and duplicate-marked with samtools markdup. Collapsed single-end reads were coordinate-sorted and processed with PALEOMIX rmdup_collapsed; merged single-end reads were coordinate-sorted and duplicate-marked with samtools markdup.
+
+The resulting BAMs retain reads and flag duplicates; this step marks duplicates rather than removing records. Outputs were indexed and checked with samtools quickcheck, and record counts were checked before and after processing.
+
+Zambia results: Pečnerová-replication track
+All 40 expected Zambia BAM outputs (eight individuals across the available branch/read-type combinations) were generated, and the BAM integrity checks passed. Coverage below is calculated after duplicate marking over the 27 complete autosomes; each row summarizes eight individuals.
+Branch	Read type	n	Median depth (×)	Depth range (×)	Median breadth at ≥1×
+AdapterRemoval	Collapsed	8	2.302	1.408–3.154	85.567%
+AdapterRemoval	Paired	8	6.846	5.956–8.222	94.807%
+Current fastp	Paired	8	10.075	8.552–12.450	94.985%
+fastp merge ON	Merged	8	1.675	1.038–2.414	77.623%
+fastp merge ON	Paired	8	7.446	6.477–8.873	94.891%
+
+After an initial review of these QC metrics, we decided to align duplicate handling with Pečnerová et al.’s approach by physically removing duplicate-flagged reads before downstream analyses.
+
+The paired-read branches have similar median breadth (about 94.8–95.0%), while current fastp has higher median depth in this set. 
+
+**Note** Merged and collapsed BAMs represent reads retained in those separate preprocessing products, so their depth and breadth should be interpreted separately from paired BAMs and not added as if they were independent whole-library coverage estimates.
+
+
+### Output and next steps
+
+The Zambia autosome-coverage summary is at qc/mapping/post_alignment/pecnerova_zambia_autosome_coverage_20261112/pecnerova_zambia_autosome_coverage.tsv
+
+Zambian elephants dedup-BAM:
+/N/scratch/xta1/ZambiaElephants/mapping/sensitivity/duplicate_cleanup_array/20261109_182300/outputs/pecnerova/adapterremoval/dup_cleanup/
+/.../pecnerova/current_fastp/dup_cleanup/
+/.../pecnerova/fastp_merge/dup_cleanup/
+
+
+- Finish and validate the remaining public-sample cleanup tasks, then calculate coverage with the same autosome and filtering definitions.
+- Run the library-aware track only for groups with verified library assignments; keep its outputs distinct from the replication track.
+- Before ROH analysis for Zambian samples, evaluate genotype-level depth/quality and callable sites; mean depth and 1× breadth alone do not establish genotype reliability.
+
+
+
+### Scripts
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_align_cleanup.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/duplicate_cleanup_all_bams.py
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/duplicate_cleanup_array.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/duplicate_cleanup_array_manager.py
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/submit_duplicate_cleanup_arrays.sh
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/duplicate_cleanup.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/pecnerova_zambia_autosome_coverage.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/full_bam_depth_breadth_array.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/full_bam_depth_breadth_array.py
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/full_bam_depth_breadth.py
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_qc_full.sbatch
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_qc_full.py
+/N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_qc_full_scan.c /N/scratch/xta1/ZambiaElephants/slurm/scripts/pecnerova_zambia_remove_duplicates.sbatch
+
