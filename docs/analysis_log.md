@@ -452,3 +452,78 @@ Zambian elephants dedup-BAM:
 /N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_qc_full.py
 /N/scratch/xta1/ZambiaElephants/slurm/scripts/mapping_qc_full_scan.c /N/scratch/xta1/ZambiaElephants/slurm/scripts/pecnerova_zambia_remove_duplicates.sbatch
 
+
+## Date: 11/14/2026 Zambian dedup-BAMs have been uploaded to shared slate space.
+
+/N/project/ZambianElephants/
+
+
+
+
+
+
+
+
+
+
+## Date: 11/15/2026 - Zambia genotype calling and genotype-depth QC  -- Issues!
+
+**Task** 
+Generate branch-specific Zambia genotype calls from duplicate-removed BAMs and assess callability, allele-frequency sensitivity, and genotype depth before ROH analysis.
+
+**Objective**
+Create initial genotype-call sets for the eight focal Zambia elephants in each preprocessing branch. Keep branches separate so preprocessing effects can be evaluated, and quantify the support behind hard-called genotypes before applying any genotype filters or running ROH.
+
+**Scripts**
+- genotype_call_zambia_array.sbatch
+- submit_genotype_call_zambia.sh
+- aggregate_genotype_call_zambia.sh
+- genotype_qc_zambia.py
+- genotype_qc_zambia.sbatch
+- submit_genotype_qc_zambia.sh
+- aggregate_genotype_qc_zambia.sh
+- genotype_dp_bins_zambia.py
+- genotype_dp_bins_zambia.sbatch
+- submit_genotype_dp_bins_zambia.sh
+- aggregate_genotype_dp_bins_zambia.sh
+
+  
+**Method**
+Genotype calls were generated separately for adapterremoval, current_fastp, and fastp_merge, jointly across Zambia01–Zambia08 within each branch. Paired and collapsed/merged BAMs for the same individual were supplied to bcftools mpileup using read-group mappings, without first writing a pooled BAM. Calls were restricted to the 27 autosomes and biallelic SNPs.
+
+The calling settings were BCFtools 1.17, minimum mapping quality 30, minimum base quality 25, --per-sample-mF, and the multiallelic caller. FORMAT/DP and FORMAT/AD were retained. No MAF threshold, genotype-depth mask, imputation, or reference-reliability mask was applied in this initial call set. Duplicate-flagged records had already been physically removed from these BAMs.
+
+Genotype QC was summarized over the variant records in each branch-level BCF. Therefore, the reported call rate is the fraction of those variant records with a called GT; it is not a genome-wide callable-site rate. DP-bin summaries likewise describe called genotypes at these variant records and do not represent coverage across every genomic base. The DP analysis was diagnostic only and did not modify the BCFs.
+Results: branch-level calls and QC
+Branch	Samples	Biallelic SNP records	Sites called in all 8 samples	Per-sample call-rate range
+AdapterRemoval	8	10,281,820	96.55%	98.54–99.08%
+Current fastp	8	10,609,730	96.76%	98.61–99.14%
+fastp merge ON	8	10,239,834	96.62%	98.57–99.09%
+
+
+The branch-level BCFs and indexes are under qc/genotypes/zambia_pecnerova_track/20261115_013407/<branch>/. The combined genotype-QC tables are under qc/genotypes/zambia_pecnerova_track/20261115_013407/genotype_qc/20261115_144504/.
+MAF sensitivity
+MAF was calculated from hard-called alleles among called genotypes. The table reports the number of variant records retained at each threshold.
+Branch	MAF ≥0	MAF ≥0.05	MAF ≥0.10	MAF ≥0.125
+AdapterRemoval	10,281,820 (100.00%)	9,778,937 (95.11%)	6,161,272 (59.92%)	6,151,153 (59.83%)
+Current fastp	10,609,730 (100.00%)	10,116,659 (95.35%)	6,293,297 (59.32%)	6,283,637 (59.23%)
+fastp merge ON	10,239,834 (100.00%)	9,741,687 (95.14%)	6,141,073 (59.97%)	6,131,283 (59.88%)
+
+
+With eight diploid individuals, the smallest non-zero MAF among called genotypes is at least 1/16 (6.25%). Thus, the 0.05 threshold mainly removes records whose called genotypes are monomorphic in this eight-sample set; thresholds of 0.10 and 0.125 remove substantially more low-frequency variation. These are sensitivity results, not a final MAF decision.
+Genotype-depth diagnostics
+Branch	Called genotypes with DP <5, range across samples	Called genotypes with DP <10, range across samples
+AdapterRemoval	4.34–16.60%	34.06–71.62%
+Current fastp	3.96–16.29%	33.12–71.41%
+fastp merge ON	4.25–16.59%	34.10–71.75%
+
+
+A substantial share of hard-called genotypes at variant records has DP below 10, with clear variation among individuals. These calls should not be treated as equally certain. At the same time, this summary alone does not justify a blanket DP cutoff: masking low-DP calls will increase missingness and may affect ROH estimates. The DP-bin tables are in the timestamped genotype_qc/dp_bins_<run_id>/ directory under the genotype-call run.
+
+
+**Interpretation and next steps**
+- Treat these BCFs as initial hard-call inputs for QC and sensitivity analysis, not as final ROH-ready genotypes.
+- Compare ROH outcomes under explicitly documented genotype-depth masks (including no mask and candidate DP thresholds) and MAF thresholds; report how many sites and genotypes each choice removes.
+- Assess genotype quality and allele balance alongside DP before selecting filters. Do not infer genome-wide callability from the variant-only call-rate statistic.
+- The present BCFs contain hard GTs, DP, and AD; they do not contain the ANGSD genotype-likelihood input used for the Pečnerová et al. imputation workflow. A likelihood-based analysis would require a separate GL-generation workflow and a suitable, verified reference panel.
+- After choosing and documenting the filtering sensitivity set, run ROH on the 27 autosomes for each branch and compare individual-level FROH and ROH length distributions.
