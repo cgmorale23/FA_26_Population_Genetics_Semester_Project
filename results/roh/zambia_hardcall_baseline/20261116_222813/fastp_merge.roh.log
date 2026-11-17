@@ -1,0 +1,37 @@
+PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
+Options in effect:
+  --bfile /N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge
+  --chr-set 27
+  --homozyg
+  --homozyg-window-het 3
+  --homozyg-window-missing 20
+  --memory 12000
+  --out /N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge.roh
+
+Hostname: c80.quartz.uits.iu.edu
+Working directory: /N/scratch/xta1/ZambiaElephants
+Start time: Mon Nov 16 22:36:33 2026
+
+Random number seed: 1794886593
+515800 MB RAM detected; reserving 12000 MB for main workspace.
+10239834 variants loaded from .bim file.
+8 samples (0 males, 0 females, 8 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge.roh.nosex
+.
+Using 1 thread.
+Before main variant filters, 8 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.988544.
+10239834 variants and 8 samples pass filters and QC.
+Note: No phenotypes present.
+--homozyg: Scan complete, found 25 ROH.
+Results saved to
+/N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge.roh.hom
++
+/N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge.roh.hom.indiv
++
+/N/scratch/xta1/ZambiaElephants/qc/roh/hardcall_baseline/20261116_222813/fastp_merge.roh.hom.summary
+.
+
+End time: Mon Nov 16 22:37:07 2026
