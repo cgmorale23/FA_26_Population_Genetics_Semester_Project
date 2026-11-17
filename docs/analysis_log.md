@@ -539,7 +539,8 @@ Establish an unmasked hard-call baseline and record how ROH calls vary among Ada
   
 **Method**
 For each branch, the BCF was restricted to the 27 autosomes (chr1–chr27), renamed to PLINK chromosome codes 1–27, and converted to PLINK binary format. PLINK ROH calling used --homozyg --homozyg-window-het 3 --homozyg-window-missing 20; other ROH parameters remained at PLINK 1.9 defaults. The analysis used the initial hard-call genotypes without a DP mask, MAF filter, or imputation. The BCFs had been generated from duplicate-removed BAMs.
-Results
+
+**Results**
 Branch	Samples	ROH segments	Individuals with ≥1 ROH	Mean FROH (%)
 AdapterRemoval	8	23	8	0.127671
 Current fastp	8	1	1	0.004945
