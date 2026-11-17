@@ -205,24 +205,20 @@ adapterremoval_pecnerova.sbatch
 adapterremoval_post_fastqc.sbatch
 
 
-### Results
-QC and Sensitivity Comparison Tables
-qc/fastp_merge/fastp_merge_summary.tsv
-qc/adapterremoval_pecnerova/adapterremoval_summary.tsv
-qc/preprocessing_merge_comparison.tsv
-
-Metric	Current fastp	Fastp merge ON	AdapterRemoval
-Sequencing units	54	54	54
-Adapter trimming	Yes	Yes	Yes
-Poly-G trimming	Yes	Yes	No explicit trimming
-Overlapping-read merging	OFF	ON	ON (collapse)
-Public samples: mean merge/collapse rate	—	13.91%	18.93%
-Namibia: mean merge/collapse rate	—	43.36%	53.37%
-Zambia: mean merge/collapse rate	—	23.21%	28.55%
-R2 files with FastQC poly-G overrepresentation signals	Not yet consolidated	17/54	40/54
+| Metric | Current fastp | fastp merge ON | AdapterRemoval |
+|---|---:|---:|---:|
+| Sequencing units | 54 | 54 | 54 |
+| Adapter trimming | Yes | Yes | Yes |
+| Poly-G trimming | Yes | Yes | No explicit trimming |
+| Overlapping-read merging | OFF | ON | ON (collapse) |
+| Public samples: mean merge/collapse rate | — | 13.91% | 18.93% |
+| Namibia: mean merge/collapse rate | — | 43.36% | 53.37% |
+| Zambia: mean merge/collapse rate | — | 23.21% | 28.55% |
+| R2 files with FastQC poly-G overrepresentation signals | Not yet consolidated | 17/54 | 40/54 |
 
 
 Note: AdapterRemoval consistently produced higher read-collapsing rates than fastp. This is consistent with differences in their overlap-detection criteria: AdapterRemoval permits shorter overlaps (11 bp by default) and uses a more permissive mismatch threshold (--mm 3), whereas fastp requires at least 30 bp of overlap and applies stricter mismatch limits by default. Therefore, the higher collapse rate should not be interpreted as evidence of superior preprocessing quality without examining downstream mapping and genotype-level metrics.
+
 
 ## Date: 11/2/2026
 
@@ -247,13 +243,13 @@ Successfully extracted all 270 expected mapping records from 305 SLURM output lo
 
 All BAMs passed `samtools quickcheck` and had corresponding index files.
 
-Branch	Read type	Units	Primary mapped	Properly paired
-Current fastp	Paired	54	98.7151%	94.7862%
-Fastp merge ON	Paired	54	98.6253%	94.4504%
-Fastp merge ON	Merged	54	98.4097%	N/A
-AdapterRemoval	Paired	54	98.6756%	94.4728%
-AdapterRemoval	Collapsed	54	98.4892%	N/A
-
+| Branch | Read type | Units | Primary mapped | Properly paired |
+|---|---|---:|---:|---:|
+| Current fastp | Paired | 54 | 98.7151% | 94.7862% |
+| fastp merge ON | Paired | 54 | 98.6253% | 94.4504% |
+| fastp merge ON | Merged | 54 | 98.4097% | N/A |
+| AdapterRemoval | Paired | 54 | 98.6756% | 94.4728% |
+| AdapterRemoval | Collapsed | 54 | 98.4892% | N/A |
 
 Initial post-alignment QC has been completed for all 270 BAMs across the three preprocessing branches. Primary mapping rates were consistently high (98.41–98.72%), and properly paired rates ranged from 94.45% to 94.79% for paired-end alignments. 
 
@@ -407,12 +403,14 @@ The resulting BAMs retain reads and flag duplicates; this step marks duplicates 
 
 Zambia results: Pečnerová-replication track
 All 40 expected Zambia BAM outputs (eight individuals across the available branch/read-type combinations) were generated, and the BAM integrity checks passed. Coverage below is calculated after duplicate marking over the 27 complete autosomes; each row summarizes eight individuals.
-Branch	Read type	n	Median depth (×)	Depth range (×)	Median breadth at ≥1×
-AdapterRemoval	Collapsed	8	2.302	1.408–3.154	85.567%
-AdapterRemoval	Paired	8	6.846	5.956–8.222	94.807%
-Current fastp	Paired	8	10.075	8.552–12.450	94.985%
-fastp merge ON	Merged	8	1.675	1.038–2.414	77.623%
-fastp merge ON	Paired	8	7.446	6.477–8.873	94.891%
+
+| Branch | Read type | n | Median depth (×) | Depth range (×) | Median breadth at ≥1× |
+|---|---|---:|---:|---:|---:|
+| AdapterRemoval | Collapsed | 8 | 2.302 | 1.408–3.154 | 85.567% |
+| AdapterRemoval | Paired | 8 | 6.846 | 5.956–8.222 | 94.807% |
+| Current fastp | Paired | 8 | 10.075 | 8.552–12.450 | 94.985% |
+| fastp merge ON | Merged | 8 | 1.675 | 1.038–2.414 | 77.623% |
+| fastp merge ON | Paired | 8 | 7.446 | 6.477–8.873 | 94.891% |
 
 After an initial review of these QC metrics, we decided to align duplicate handling with Pečnerová et al.’s approach by physically removing duplicate-flagged reads before downstream analyses.
 
@@ -487,29 +485,32 @@ Genotype calls were generated separately for adapterremoval, current_fastp, and 
 The calling settings were BCFtools 1.17, minimum mapping quality 30, minimum base quality 25, --per-sample-mF, and the multiallelic caller. FORMAT/DP and FORMAT/AD were retained. No MAF threshold, genotype-depth mask, imputation, or reference-reliability mask was applied in this initial call set. Duplicate-flagged records had already been physically removed from these BAMs.
 
 Genotype QC was summarized over the variant records in each branch-level BCF. Therefore, the reported call rate is the fraction of those variant records with a called GT; it is not a genome-wide callable-site rate. DP-bin summaries likewise describe called genotypes at these variant records and do not represent coverage across every genomic base. The DP analysis was diagnostic only and did not modify the BCFs.
-Results: branch-level calls and QC
-Branch	Samples	Biallelic SNP records	Sites called in all 8 samples	Per-sample call-rate range
-AdapterRemoval	8	10,281,820	96.55%	98.54–99.08%
-Current fastp	8	10,609,730	96.76%	98.61–99.14%
-fastp merge ON	8	10,239,834	96.62%	98.57–99.09%
+
+| Branch | Samples | Biallelic SNP records | Sites called in all 8 samples | Per-sample call-rate range |
+|---|---:|---:|---:|---:|
+| AdapterRemoval | 8 | 10,281,820 | 96.55% | 98.54–99.08% |
+| Current fastp | 8 | 10,609,730 | 96.76% | 98.61–99.14% |
+| fastp merge ON | 8 | 10,239,834 | 96.62% | 98.57–99.09% |
 
 
 The branch-level BCFs and indexes are under qc/genotypes/zambia_pecnerova_track/20261115_013407/<branch>/. The combined genotype-QC tables are under qc/genotypes/zambia_pecnerova_track/20261115_013407/genotype_qc/20261115_144504/.
 MAF sensitivity
 MAF was calculated from hard-called alleles among called genotypes. The table reports the number of variant records retained at each threshold.
-Branch	MAF ≥0	MAF ≥0.05	MAF ≥0.10	MAF ≥0.125
-AdapterRemoval	10,281,820 (100.00%)	9,778,937 (95.11%)	6,161,272 (59.92%)	6,151,153 (59.83%)
-Current fastp	10,609,730 (100.00%)	10,116,659 (95.35%)	6,293,297 (59.32%)	6,283,637 (59.23%)
-fastp merge ON	10,239,834 (100.00%)	9,741,687 (95.14%)	6,141,073 (59.97%)	6,131,283 (59.88%)
 
+| Branch | MAF ≥0 | MAF ≥0.05 | MAF ≥0.10 | MAF ≥0.125 |
+|---|---:|---:|---:|---:|
+| AdapterRemoval | 10,281,820 (100.00%) | 9,778,937 (95.11%) | 6,161,272 (59.92%) | 6,151,153 (59.83%) |
+| Current fastp | 10,609,730 (100.00%) | 10,116,659 (95.35%) | 6,293,297 (59.32%) | 6,283,637 (59.23%) |
+| fastp merge ON | 10,239,834 (100.00%) | 9,741,687 (95.14%) | 6,141,073 (59.97%) | 6,131,283 (59.88%) |
 
 With eight diploid individuals, the smallest non-zero MAF among called genotypes is at least 1/16 (6.25%). Thus, the 0.05 threshold mainly removes records whose called genotypes are monomorphic in this eight-sample set; thresholds of 0.10 and 0.125 remove substantially more low-frequency variation. These are sensitivity results, not a final MAF decision.
 Genotype-depth diagnostics
-Branch	Called genotypes with DP <5, range across samples	Called genotypes with DP <10, range across samples
-AdapterRemoval	4.34–16.60%	34.06–71.62%
-Current fastp	3.96–16.29%	33.12–71.41%
-fastp merge ON	4.25–16.59%	34.10–71.75%
 
+| Branch | Called genotypes with DP <5, range across samples | Called genotypes with DP <10, range across samples |
+|---|---:|---:|
+| AdapterRemoval | 4.34–16.60% | 34.06–71.62% |
+| Current fastp | 3.96–16.29% | 33.12–71.41% |
+| fastp merge ON | 4.25–16.59% | 34.10–71.75% |
 
 A substantial share of hard-called genotypes at variant records has DP below 10, with clear variation among individuals. These calls should not be treated as equally certain. At the same time, this summary alone does not justify a blanket DP cutoff: masking low-DP calls will increase missingness and may affect ROH estimates. The DP-bin tables are in the timestamped genotype_qc/dp_bins_<run_id>/ directory under the genotype-call run.
 
