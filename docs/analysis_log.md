@@ -459,13 +459,6 @@ Zambian elephants dedup-BAM:
 
 
 
-
-
-
-
-
-
-
 ## Date: 11/15/2026 - Zambia genotype calling and genotype-depth QC  -- Issues!
 
 **Task** 
@@ -527,3 +520,47 @@ A substantial share of hard-called genotypes at variant records has DP below 10,
 - Assess genotype quality and allele balance alongside DP before selecting filters. Do not infer genome-wide callability from the variant-only call-rate statistic.
 - The present BCFs contain hard GTs, DP, and AD; they do not contain the ANGSD genotype-likelihood input used for the Pečnerová et al. imputation workflow. A likelihood-based analysis would require a separate GL-generation workflow and a suitable, verified reference panel.
 - After choosing and documenting the filtering sensitivity set, run ROH on the 27 autosomes for each branch and compare individual-level FROH and ROH length distributions.
+
+
+## Date: 11/16/2026 — Zambia hard-call baseline ROH
+
+**Task** 
+Run an initial PLINK 1.9 ROH analysis on the eight focal Zambia elephants, separately for each preprocessing branch.
+
+**Objective**
+Establish an unmasked hard-call baseline and record how ROH calls vary among AdapterRemoval, current fastp, and fastp merge ON. This is an exploratory preprocessing comparison, not a final ROH result.
+
+**Script and inputs**
+- Server script: slurm/scripts/roh_hardcall_baseline.sbatch
+- Input BCFs: qc/genotypes/zambia_pecnerova_track/20261115_013407/<branch>/<branch-specific raw biallelic-SNP BCF>
+- Run directory: qc/roh/hardcall_baseline/20261116_222813/
+- PLINK: v1.9.0-b.7.7 64-bit (22 Oct 2024)
+- SLURM job: 12942479 (completed successfully; elapsed 8m55s)
+  
+**Method**
+For each branch, the BCF was restricted to the 27 autosomes (chr1–chr27), renamed to PLINK chromosome codes 1–27, and converted to PLINK binary format. PLINK ROH calling used --homozyg --homozyg-window-het 3 --homozyg-window-missing 20; other ROH parameters remained at PLINK 1.9 defaults. The analysis used the initial hard-call genotypes without a DP mask, MAF filter, or imputation. The BCFs had been generated from duplicate-removed BAMs.
+Results
+Branch	Samples	ROH segments	Individuals with ≥1 ROH	Mean FROH (%)
+AdapterRemoval	8	23	8	0.127671
+Current fastp	8	1	1	0.004945
+fastp merge ON	8	25	7	0.135758
+
+
+Per-individual segment counts, total ROH length, and FROH are in results/roh/zambia_hardcall_baseline/20261116_222813/roh_by_sample.tsv.
+
+FROH (%) was calculated as total called ROH length divided by the total length of the 27 autosomes (2,663,685,809 bp), multiplied by 100.
+
+The branch-level ROH counts differ substantially under identical calling settings. The observed difference cannot be attributed to merging alone: branch-specific preprocessing, read composition, and resulting hard calls all differ. Sample-level missingness was broadly similar across branches (approximately 0.9–1.5% missing variant genotypes), so the branch-level ROH contrast is not explained by a large difference in overall missingness alone. This baseline has no genotype-quality/depth masking and should not be interpreted as a definitive estimate of inbreeding.
+
+**Outputs**
+- <branch>.roh.hom.indiv: compact individual-level ROH summaries.
+- <branch>.roh.hom: ROH segment calls.
+- <branch>.roh.hom.summary: PLINK per-variant summary; very large files, retained on scratch rather than versioned in GitHub.
+- <branch>.bed/.bim/.fam: intermediate PLINK datasets, retained on scratch rather than versioned in GitHub.
+- Compact cross-branch summary: results/roh/zambia_hardcall_baseline/20261116_222813/roh_by_sample.tsv.
+  
+**Next steps**
+- Compare ROH after explicitly documented DP masks and MAF thresholds; report the number of sites and genotypes removed at each setting.
+- Evaluate genotype quality and allele balance before selecting a primary filter set.
+- Compare individual FROH and segment-length distributions across branches and filtering choices.
+- Treat the current hard-call analysis as a sensitivity baseline; decide separately whether to develop a genotype-likelihood workflow with a suitable reference panel.
