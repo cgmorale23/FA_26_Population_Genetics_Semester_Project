@@ -568,3 +568,84 @@ The branch-level ROH counts differ substantially under identical calling setting
 - Evaluate genotype quality and allele balance before selecting a primary filter set.
 - Compare individual FROH and segment-length distributions across branches and filtering choices.
 - Treat the current hard-call analysis as a sensitivity baseline; decide separately whether to develop a genotype-likelihood workflow with a suitable reference panel.
+
+
+# Zambia Elephant Genomics — Analysis Log Draft
+
+## Date: 11/23/2026 — Zambia ROH branch comparison and sensitivity analyses
+
+**Researcher:** Xiaoyue
+
+**Task:** Investigate ROH differences among AdapterRemoval, current fastp (merge OFF), and fastp merge ON; evaluate genotype-depth, MAF, and PLINK parameter sensitivity.
+
+### Objective
+
+Quantify the branch-level ROH differences under a shared baseline, examine whether genotype discordance and depth support may contribute, and record the next steps for the public dataset and depth-matched comparisons.
+
+### Baseline method
+
+- Eight Zambia elephants (Zambia01–Zambia08); branch-specific autosomal biallelic-SNP hard-call BCFs.
+- BCFtools 1.17 calls used minimum mapping quality 30 and base quality 25, retaining FORMAT/DP and FORMAT/AD. No genotype likelihoods or imputation were used.
+- PLINK 1.9 ROH settings: `--homozyg --homozyg-window-het 3 --homozyg-window-missing 20`; other ROH parameters were defaults, including minimum length 1 Mb and minimum 100 SNPs.
+- FROH (%) = total called ROH length / 27-autosome length (2,663,685,809 bp) × 100.
+
+| Branch | ROH segments | Individuals with ≥1 ROH | Mean total ROH (kb/individual) | Mean FROH (%) | Median FROH (%) |
+|---|---:|---:|---:|---:|---:|
+| AdapterRemoval | 23 | 8/8 | 3,400.77 | 0.127671 | 0.140724 |
+| Current fastp, merge OFF | 1 | 1/8 | 131.72 | 0.004945 | 0 |
+| fastp merge ON | 25 | 7/8 | 3,616.15 | 0.135757 | 0.134945 |
+
+AdapterRemoval and fastp merge ON produced broadly similar cohort-level baseline estimates. Current fastp merge OFF was a marked outlier. This comparison does not isolate merging as the sole cause: the branches differ in read processing, read representation, alignments, and resulting genotype evidence. Similar overall missingness does not rule out localized genotype differences that split or join ROH segments.
+
+### Genotype-discordance and depth investigation
+
+Pairwise comparisons found substantial differences at shared variant records. Current fastp versus fastp merge ON shared 10,134,190 autosomal variant records and had 409,130 sample-site comparisons with different called GTs, plus one-sided missing calls. These are sample-site comparisons across eight individuals, not unique genomic positions.
+
+Discordance was enriched when DP differed between branches or was low on either side. For current fastp versus merge ON, jointly called sites with both branches in DP 5–9 had 0.252% discordance; the DP ≥10 versus DP <5 stratum had 34.85% discordance but was small. Discordance remained 0.423% when both branches were DP ≥10, so depth imbalance is relevant but does not explain all GT disagreement.
+
+AD summaries showed both weakly supported and allele-skewed calls among discordant GTs; they do not establish that one branch is universally more reliable. Most discordant sites were outside called ROH intervals, but discordant genotypes within an interval can still affect PLINK windows and segment boundaries. These findings make genotype evidence a plausible mechanism, not a proven single cause of the branch-level ROH difference.
+
+### DP, MAF, and PLINK parameter sensitivity
+
+An initial analysis varied genotype masking (none, DP<5 masked, DP<10 masked) and MAF threshold (none, ≥0.05, ≥0.10, ≥0.125). The DP<10 mask strongly reduced called-genotype availability. A prior genotype-count summary incorrectly treated allele counts as genotype counts; corrected call-rate values were used. This correction did not change the ROH calls.
+
+A completed factorial PLINK grid evaluated 1,296 combinations: 3 branches × 2 DP masks (none/ge5) × 2 MAF filters (none/ge005) × minimum ROH length (500/1,000/1,500 kb) × minimum SNP count (50/100/150) × window heterozygotes (1/3/5) × window missingness (5/10/20/40). The exact baseline setting is included.
+
+Marginal mean FROH (%) across the other tested factors:
+
+| Parameter | Levels | AdapterRemoval | Current fastp | fastp merge ON |
+|---|---|---:|---:|---:|
+| Minimum ROH length | 500 / 1,000 / 1,500 kb | 1.5362 / 0.2629 / 0.0788 | 0.8859 / 0.0924 / 0.0142 | 1.6731 / 0.2713 / 0.0690 |
+| Window heterozygotes | 1 / 3 / 5 | 0.0417 / 0.4816 / 1.3547 | 0.0098 / 0.2052 / 0.7775 | 0.0560 / 0.5241 / 1.4334 |
+| Window missing calls | 5 / 10 / 20 / 40 | 0.3065 / 0.5161 / 0.7867 / 0.8945 | 0.1651 / 0.2727 / 0.4136 / 0.4720 | 0.3319 / 0.5595 / 0.8414 / 0.9518 |
+
+Changing minimum SNP count from 50 to 100 to 150 did not change branch-level summaries in this grid. The tested calls were not limited by this threshold in these scenarios; this is specific to this dataset and grid.
+
+The largest sensitivities were minimum ROH length and tolerated window heterozygotes. More permissive window settings detect more and longer segments, but can also admit less-stringent runs. These sensitivity results alone do not determine the primary setting. Marginal means average across factorial strata; use the exact baseline row and scientifically justified settings for interpretation.
+
+### Interpretation and limitations
+
+- The current fastp merge-OFF baseline is a marked outlier under shared PLINK settings. The full grid raises ROH estimates under permissive settings for all branches, while retaining branch differences.
+- Merging changes read representation and usable evidence; genotype comparisons show differences in GT, DP, and AD support between branches.
+- AdapterRemoval and fastp merge ON are closer in baseline ROH totals. This does not establish which is biologically more accurate. AdapterRemoval remains a reasonable primary candidate because it follows the Pečnerová-style preprocessing, pending QC and sensitivity review.
+- Baseline FROH is based on hard calls without imputation and a 1 Mb minimum ROH length; it is not directly comparable to estimates from different genotype-likelihood, imputation, and ROH workflows.
+- Eight individuals make this an exploratory analysis, not a population-wide estimate.
+
+### Public BAM status and next steps
+
+The 110-row public-track plan included both public and Zambia samples. All 110 expected duplicate-marked BAMs and indexes passed file, `samtools quickcheck`, and `samtools idxstats` checks. These checks establish readability, not biological validity or physical duplicate removal. The `dupmark` outputs retain records with duplicates marked; downstream duplicate removal must explicitly exclude duplicate-flagged alignments and write/index separate outputs.
+
+Next work proceeds in two coordinated tracks:
+**The BAM generation for all public samples is completed today!**
+
+1. **Full-depth public dataset:** process selected public BAMs through duplicate removal, genotype calling, QC, and ROH using the same workflow as Zambia. Keep public outputs separate and retain verified library-group assignments.
+2. **Depth-matched comparison:** estimate post-dedup autosomal coverage for Zambia and public individuals before choosing a target. Apply a consistent sampling fraction to each sample/branch's component BAMs (paired plus merged/collapsed where applicable), rather than setting a separate target for each component. Run the same genotype and ROH workflow on downsampled data and compare with full-depth results.
+3. For both tracks, preserve branch labels, use consistent mapping/base-quality and genotype filters, and report callability/DP alongside ROH. The target depth and primary preprocessing branch remain to be decided from coverage and QC summaries.
+
+### Key outputs
+
+- Baseline ROH: `qc/roh/hardcall_baseline/20261116_222813/`
+- Branch comparison and discordance diagnostics: `qc/roh/fastp_merge_exploration/20261121_123041/`
+- DP/MAF sensitivity: `qc/roh/dp_maf_sensitivity/`
+- Initial PLINK grid: `qc/roh/plink_parameter_grid/20261122_230034_13044773/`
+- Extended factorial grid: `qc/roh/plink_parameter_grid_extended/20261123_103857_13048825/`
