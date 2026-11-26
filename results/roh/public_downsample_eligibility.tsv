@@ -1,0 +1,7 @@
+stratum	zambia_target_depth_x	public_samples_at_or_above_target	public_samples_below_target	eligible_public_samples
+adapterremoval_collapsed	2.302	11/14	3	all except DS1507,NA5207,NA5208
+adapterremoval_paired	6.846	8/14	6	all except LO3505,NA5205,NA5206,NA5207,NA5208,QE0870
+current_fastp_paired	10.075	12/14	2	all except NA5207,NA5208
+fastp_merge_merged	1.675	8/14	6	all except DS1506,DS1507,KR0116,LO3503,NA5207,NA5208
+fastp_merge_paired	7.446	8/14	6	all except LO3505,NA5205,NA5206,NA5207,QE0870
+common_to_all_five_strata	varies	4/14	10	KR0027,KR0068,KR0138,QE2798

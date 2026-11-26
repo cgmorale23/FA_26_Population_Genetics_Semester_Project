@@ -1,0 +1,6 @@
+branch	read_type	n_samples	zambia_median_target_x	public_median_mean_depth_x	public_samples_at_or_above_target	public_samples_below_target	samples_below_target
+adapterremoval	collapsed	14	2.302	3.478076	11	3	DS1507,NA5207,NA5208
+adapterremoval	paired	14	6.846	21.840492	8	6	LO3505,NA5205,NA5206,NA5207,NA5208,QE0870
+current_fastp	paired	14	10.075	25.947726	12	2	NA5207,NA5208
+fastp_merge	merged	14	1.675	2.057952	8	6	DS1506,DS1507,KR0116,LO3503,NA5207,NA5208
+fastp_merge	paired	14	7.446	22.729173	8	6	LO3505,NA5205,NA5206,NA5207,NA5208,QE0870

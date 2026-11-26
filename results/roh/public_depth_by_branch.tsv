@@ -1,0 +1,4 @@
+branch	n_samples	median_mean_depth_x	min_mean_depth_x	max_mean_depth_x	median_breadth_1x_pct
+adapterremoval	14	23.938851	2.871175	62.089622	94.829051
+current_fastp	14	24.966613	3.326676	62.892232	94.890394
+fastp_merge	14	23.972785	2.893692	62.035835	94.844126
