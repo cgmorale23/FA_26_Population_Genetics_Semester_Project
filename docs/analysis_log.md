@@ -570,8 +570,6 @@ The branch-level ROH counts differ substantially under identical calling setting
 - Treat the current hard-call analysis as a sensitivity baseline; decide separately whether to develop a genotype-likelihood workflow with a suitable reference panel.
 
 
-# Zambia Elephant Genomics — Analysis Log Draft
-
 ## Date: 11/23/2026 — Zambia ROH branch comparison and sensitivity analyses
 
 **Researcher:** Xiaoyue
@@ -649,3 +647,28 @@ Next work proceeds in two coordinated tracks:
 - DP/MAF sensitivity: `qc/roh/dp_maf_sensitivity/`
 - Initial PLINK grid: `qc/roh/plink_parameter_grid/20261122_230034_13044773/`
 - Extended factorial grid: `qc/roh/plink_parameter_grid_extended/20261123_103857_13048825/`
+
+
+
+### Date: 11/25/2026 — Public elephant BAM depth assessment and downsampling plan (26 November 2026)
+
+**Summary** The public Pečnerová-track BAM set has been prepared at full depth with duplicate reads removed. The completed set contains 70 BAMs for 14 samples across the available preprocessing branches and read types. These files remain on the Quartz project storage; they are not part of this GitHub repository.
+
+### Result
+Autosomal coverage was summarized separately by branch and read type, excluding duplicate reads and requiring mapping quality 20. Median mean depth (×) was:
+| Branch | Read type | Zambia median depth (×) | Public median depth (×) | Public samples at or above Zambia median |
+|---|---|---:|---:|---:|
+| AdapterRemoval | collapsed | 2.302 | 3.478 | 11/14 |
+| AdapterRemoval | paired | 6.846 | 21.840 | 8/14 |
+| current fastp | paired | 10.075 | 25.948 | 12/14 |
+| fastp merge | merged | 1.675 | 2.058 | 8/14 |
+| fastp merge | paired | 7.446 | 22.729 | 8/14 |
+
+
+### Next Steps：
+For the matched-depth sensitivity analysis, the plan is to downsample each read-type stratum to its corresponding Zambia median, using only public samples whose observed depth meets that target. The four samples eligible across all five strata are KR0027, KR0068, KR0138, and QE2798. The full-depth public analysis remains the primary result; this four-sample matched-depth set is a sensitivity analysis. Downsampling has not yet been run.
+
+After downsampling, verify achieved depth and file integrity, then call genotypes and run ROH using the same settings as the full-depth comparison. Keep branch/read-type strata separate; do not combine paired, merged, and collapsed reads when estimating target depth.
+Transfer status
+
+The full-depth duplicate-removed BAMs are present on Quartz storage. Transfer to the shared Slate project directory is pending confirmation of the destination path. Do not place BAMs in GitHub. After transfer, compare source and destination file counts and checksums.
