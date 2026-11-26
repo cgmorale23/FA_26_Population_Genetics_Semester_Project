@@ -674,4 +674,4 @@ Transfer status
 The full-depth duplicate-removed BAMs are present on Quartz storage. Transfer to the shared Slate project directory is pending confirmation of the destination path. Do not place BAMs in GitHub. After transfer, compare source and destination file counts and checksums.
 
 ### Date: 11/26/2026 — Public elephant dedup-BAM file uploaded to Slate!
-
+/N/project/ZambianElephants/public_roh/full_depth/deduplicated/pecnerova/
