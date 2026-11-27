@@ -1,0 +1,126 @@
+comparison	branch_A_DP_bin	branch_B_DP_bin	GT_A	GT_B	discordant_genotypes	mean_DP_A	mean_DP_B	A_het_n_with_AD	A_mean_het_alt_fraction	B_het_n_with_AD	B_mean_het_alt_fraction
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/0	0/1	23063	6.864	7.214	0		23063	0.16037
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/1	0/0	52404	7.638	6.402	52404	0.15044	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/1	1/1	14457	7.421	6.266	14457	0.84685	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_5_to_9	1/1	0/1	2480	6.621	7.054	0		2480	0.83790
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_ge10	0/0	0/1	3254	8.663	10.360	0		3254	0.15658
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_ge10	0/1	0/0	311	8.746	10.379	311	0.13065	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_ge10	0/1	1/1	89	8.573	11.674	89	0.85661	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_ge10	1/1	0/1	233	8.618	10.416	0		233	0.85584
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	0/0	0/1	1432	6.127	3.347	0		1432	0.31780
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	0/0	1/1	7	5.571	2.286	0		0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	0/1	0/0	21730	5.770	3.409	21730	0.23408	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	0/1	1/1	8265	5.524	3.472	8265	0.73508	0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	1/1	0/0	4	6.750	1.250	0		0
+current_fastp_vs_fastp_merge	DP_5_to_9	DP_lt5	1/1	0/1	661	5.498	2.688	0		661	0.89423
+current_fastp_vs_fastp_merge	DP_ge10	DP_5_to_9	0/0	0/1	10392	12.087	8.130	0		10392	0.13923
+current_fastp_vs_fastp_merge	DP_ge10	DP_5_to_9	0/1	0/0	22419	11.420	8.129	22419	0.15348	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_5_to_9	0/1	1/1	3604	10.643	8.304	3604	0.85489	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_5_to_9	1/1	0/0	16	111.312	6.938	0		0
+current_fastp_vs_fastp_merge	DP_ge10	DP_5_to_9	1/1	0/1	463	15.896	8.048	0		463	0.83848
+current_fastp_vs_fastp_merge	DP_ge10	DP_ge10	0/0	0/1	37703	19.652	18.388	0		37703	0.12166
+current_fastp_vs_fastp_merge	DP_ge10	DP_ge10	0/1	0/0	98720	19.550	17.297	98720	0.12911	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_ge10	0/1	1/1	7454	18.726	20.325	7454	0.89071	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_ge10	1/1	0/0	2	155.500	14.500	0		0
+current_fastp_vs_fastp_merge	DP_ge10	DP_ge10	1/1	0/1	2336	38.541	24.350	0		2336	0.87704
+current_fastp_vs_fastp_merge	DP_ge10	DP_lt5	0/0	0/1	362	14.384	3.356	0		362	0.34346
+current_fastp_vs_fastp_merge	DP_ge10	DP_lt5	0/0	1/1	4	16.250	1.500	0		0
+current_fastp_vs_fastp_merge	DP_ge10	DP_lt5	0/1	0/0	1662	13.828	3.054	1662	0.24822	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_lt5	0/1	1/1	222	13.689	2.703	222	0.60363	0
+current_fastp_vs_fastp_merge	DP_ge10	DP_lt5	1/1	0/1	23	19.478	3.043	0		23	0.72826
+current_fastp_vs_fastp_merge	DP_lt5	DP_5_to_9	0/0	0/1	4427	3.781	5.230	0		4427	0.24225
+current_fastp_vs_fastp_merge	DP_lt5	DP_5_to_9	0/1	0/0	137	3.723	5.343	137	0.26156	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_5_to_9	0/1	1/1	229	2.480	5.454	229	0.92831	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_5_to_9	1/1	0/0	1	2.000	5.000	0		0
+current_fastp_vs_fastp_merge	DP_lt5	DP_5_to_9	1/1	0/1	936	3.626	5.297	0		936	0.75003
+current_fastp_vs_fastp_merge	DP_lt5	DP_ge10	0/0	0/1	10	3.200	15.800	0		10	0.32010
+current_fastp_vs_fastp_merge	DP_lt5	DP_ge10	0/0	1/1	1	1.000	22.000	0		0
+current_fastp_vs_fastp_merge	DP_lt5	DP_ge10	0/1	0/0	1	2.000	17.000	1	0.50000	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_ge10	0/1	1/1	4	1.500	10.750	4	1.00000	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_ge10	1/1	0/1	9	1.556	16.889	0		9	0.49663
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	0/0	0/1	17747	2.168	2.376	0		17738	0.24171
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	0/0	1/1	252	1.540	1.365	0		0
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	0/1	0/0	27795	3.016	2.005	27793	0.32989	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	0/1	1/1	27342	2.454	1.894	27338	0.75264	0
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	1/1	0/0	292	1.428	1.315	0		0
+current_fastp_vs_fastp_merge	DP_lt5	DP_lt5	1/1	0/1	16175	2.331	1.858	0		16171	0.91561
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_5_to_9	0/0	0/1	7199	8.153	6.749	0		7199	0.15503
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_5_to_9	0/1	0/0	102713	7.752	5.740	102713	0.16049	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_5_to_9	0/1	1/1	70082	7.603	5.630	70082	0.82667	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_5_to_9	1/1	0/1	1426	8.123	6.535	0		1426	0.84203
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_ge10	0/0	0/1	41	8.610	10.561	0		41	0.16465
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_ge10	0/1	0/0	9	8.000	10.556	9	0.12959	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_ge10	0/1	1/1	8	8.375	10.000	8	0.87798	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_ge10	1/1	0/1	2	9.000	11.500	0		2	0.86154
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	0/0	0/1	4596	5.826	2.274	0		4596	0.05139
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	0/0	1/1	16	7.062	1.000	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	0/1	0/0	155205	6.086	3.181	155205	0.25175	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	0/1	1/1	111675	6.027	3.338	111675	0.73293	0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	1/1	0/0	1	5.000	1.000	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_5_to_9	DP_lt5	1/1	0/1	16874	5.552	2.459	0		16874	0.99612
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_5_to_9	0/0	0/1	45969	12.409	8.063	0		45969	0.12808
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_5_to_9	0/1	0/0	67204	12.285	7.298	67204	0.15715	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_5_to_9	0/1	1/1	24713	11.117	7.165	24713	0.82501	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_5_to_9	1/1	0/0	13	135.538	6.308	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_5_to_9	1/1	0/1	2404	13.704	7.960	0		2404	0.86205
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_ge10	0/0	0/1	57537	19.928	15.445	0		57537	0.10029
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_ge10	0/1	0/0	83595	21.844	16.374	83595	0.13097	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_ge10	0/1	1/1	8529	21.718	17.723	8529	0.88268	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_ge10	1/1	0/0	3	150.667	11.333	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_ge10	1/1	0/1	4303	41.517	19.473	0		4303	0.88126
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	0/0	0/1	1694	19.427	2.877	0		1694	0.38228
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	0/0	1/1	45	19.778	1.333	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	0/1	0/0	13735	17.621	2.737	13735	0.25187	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	0/1	1/1	4093	14.955	2.791	4093	0.58578	0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	1/1	0/0	22	94.409	2.500	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_ge10	DP_lt5	1/1	0/1	187	22.134	2.465	0		187	0.85160
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_5_to_9	0/0	0/1	243	3.815	5.123	0		243	0.24859
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_5_to_9	0/1	0/0	5	3.800	6.400	5	0.26667	0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_5_to_9	0/1	1/1	29	2.621	5.552	29	0.88793	0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_5_to_9	1/1	0/1	67	3.478	5.269	0		67	0.71757
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_ge10	0/0	0/1	1	3.000	10.000	0		1	0.40000
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	0/0	0/1	27032	2.585	1.476	0		27018	0.02518
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	0/0	1/1	80	1.700	1.125	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	0/1	0/0	104689	3.308	1.850	104686	0.34576	0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	0/1	1/1	77408	3.129	1.887	77405	0.68306	0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	1/1	0/0	21	1.810	1.143	0		0
+current_fastp_vs_fastp_merge_paired_only	DP_lt5	DP_lt5	1/1	0/1	63821	3.033	1.762	0		63813	0.99723
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/0	0/1	77526	5.678	7.680	0		77526	0.16576
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/1	0/0	6398	6.842	8.409	6398	0.15289	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_5_to_9	0/1	1/1	1252	6.565	8.330	1252	0.84358	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_5_to_9	1/1	0/1	61626	5.598	7.576	0		61626	0.82377
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_ge10	0/0	0/1	37692	7.176	11.757	0		37692	0.16957
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_ge10	0/0	1/1	7	5.429	181.000	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_ge10	0/1	0/0	40058	8.172	11.945	40058	0.12516	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_ge10	0/1	1/1	2184	7.973	13.989	2184	0.86319	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_ge10	1/1	0/1	18534	7.062	10.957	0		18534	0.81396
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_lt5	0/0	0/1	3	6.000	2.667	0		3	0.19444
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_lt5	0/1	0/0	123	5.252	3.683	123	0.30267	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_lt5	0/1	1/1	25	5.600	2.600	25	0.55419	0
+fastp_merge_paired_only_vs_fastp_merge	DP_5_to_9	DP_lt5	1/1	0/1	21	5.476	2.714	0		21	0.90476
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_5_to_9	0/0	0/1	3	10.667	8.667	0		3	0.11574
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_5_to_9	0/1	0/0	24	10.500	8.458	24	0.24189	0
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_5_to_9	0/1	1/1	5	13.800	7.400	5	0.53421	0
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_5_to_9	1/1	0/1	5	10.400	8.400	0		5	0.87778
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_ge10	0/0	0/1	38563	16.686	22.351	0		38563	0.13752
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_ge10	0/1	0/0	57297	15.249	19.574	57297	0.09744	0
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_ge10	0/1	1/1	3728	18.531	44.632	3728	0.88383	0
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_ge10	1/1	0/1	5110	18.319	22.803	0		5110	0.87421
+fastp_merge_paired_only_vs_fastp_merge	DP_ge10	DP_lt5	0/1	1/1	3	10.667	2.667	3	0.21667	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_5_to_9	0/0	0/1	133240	3.174	6.046	0		133240	0.25744
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_5_to_9	0/1	0/0	4073	2.216	5.753	4073	0.03042	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_5_to_9	0/1	1/1	16262	2.467	5.553	16262	0.99610	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_5_to_9	1/1	0/0	1	2.000	5.000	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_5_to_9	1/1	0/1	101225	3.355	6.014	0		101225	0.73299
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	0/0	0/1	6898	2.914	13.926	0		6898	0.25460
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	0/0	1/1	17	3.000	101.412	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	0/1	0/0	791	3.139	16.240	791	0.35346	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	0/1	1/1	119	2.639	21.504	119	0.84384	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	1/1	0/0	12	1.083	16.667	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_ge10	1/1	0/1	2334	3.170	12.411	0		2334	0.61715
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	0/0	0/1	93065	1.859	3.328	0		93062	0.34750
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	0/0	1/1	7	1.000	1.429	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	0/1	0/0	22381	1.475	2.695	22371	0.01321	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	0/1	1/1	58433	1.784	3.094	58427	0.99947	0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	1/1	0/0	24	1.250	1.667	0		0
+fastp_merge_paired_only_vs_fastp_merge	DP_lt5	DP_lt5	1/1	0/1	63143	1.952	3.238	0		63143	0.68126

@@ -1,0 +1,4 @@
+comparison	A_records	B_records	shared_records	A_private	B_private
+current_fastp_vs_fastp_merge_paired_only	10609730	9961271	9866101	743629	95170
+fastp_merge_paired_only_vs_fastp_merge	9961271	10239834	9876415	84856	363419
+current_fastp_vs_fastp_merge	10609730	10239834	10134190	475540	105644

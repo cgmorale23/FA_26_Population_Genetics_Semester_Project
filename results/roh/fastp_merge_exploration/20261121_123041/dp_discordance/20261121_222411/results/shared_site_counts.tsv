@@ -1,0 +1,4 @@
+comparison	shared_autosomal_variant_sites
+current_fastp_vs_fastp_merge	10134190
+current_fastp_vs_fastp_merge_paired_only	9866101
+fastp_merge_paired_only_vs_fastp_merge	9876415
